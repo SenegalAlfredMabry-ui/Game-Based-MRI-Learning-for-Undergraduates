@@ -1,6 +1,6 @@
 # Figure captions and placement
 
-The current collection contains 26 figures and animations.
+The current collection contains 25 figures and animations.
 
 ## Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.png
 
@@ -114,13 +114,6 @@ The five rounds of Lesson 4 develop a workflow from individual file operations t
 
 Used in [02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/README.md](../../02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/README.md).
 
-## P1-Curriculum-Map.png
-
-The curriculum map summarizes where computing skills are introduced and reused across the five lessons. Filled markers indicate introduction, open markers indicate later use, and connecting lines show how skills carry forward into subsequent activities.
-
-[Open image](P1-Curriculum-Map.png) · [PDF](P1-Curriculum-Map.pdf)
-
-Used in [04-for-instructors/README.md](../../04-for-instructors/README.md).
 
 ## P2-Learning-Real-Lab-Skills.png
 

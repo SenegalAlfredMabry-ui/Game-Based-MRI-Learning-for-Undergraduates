@@ -6,12 +6,6 @@ You may hear from many undergraduates eager to contribute to your research, or y
 
 Students can work through the lessons asynchronously, but we ask instructors and mentors to remain involved. New tools and unfamiliar errors can make this work challenging. Arrange check-ins, identify someone students can approach for help, and discuss their results before they move on. Before assigning a lesson, run it in the environment students will use and check its downloads, software, instructions, and expected outputs.
 
-## Skills across the lessons
-
-![A matrix maps computing skills to five lessons, with separate symbols for first introduction and later reuse.](../assets/figures/P1-Curriculum-Map.png)
-
-The curriculum map summarizes where computing skills are introduced and reused across the five lessons. Filled markers indicate introduction, open markers indicate later use, and connecting lines show how skills carry forward into subsequent activities.
-
 ## Facilitation
 
 To connect learning through the games with the work of your laboratory, begin by showing students a research task that uses the same skill. A folder-navigation exercise can lead into your study’s directory structure; a sorting loop can lead into selecting scans for processing. When a student gets stuck, ask them to identify the input, the action they intended, and the output they expected. Work through an example together, then let them try the next step and explain the result.

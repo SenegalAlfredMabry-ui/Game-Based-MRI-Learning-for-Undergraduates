@@ -24,7 +24,7 @@ If a format or activity creates an access barrier, contact the maintainer to dis
 
 ## Cite this project
 
-For this preview, cite: Mabry, Senegal Alfred. *Game-Based MRI Learning for Undergraduates*. Version 0.1.0, 2026. [Repository](https://github.com/SenegalAlfredMabry-ui/Game-Based-MRI-Learning-for-Undergraduates). This is a repository citation; the associated manuscript citation will be added separately.
+Cite this curriculum as: Mabry, Senegal Alfred. *Game-Based MRI Learning for Undergraduates*. Version 0.1.0, 2026. [Repository](https://github.com/SenegalAlfredMabry-ui/Game-Based-MRI-Learning-for-Undergraduates). This is a repository citation; the associated manuscript citation will be added separately.
 
 When referring to a particular version of the teaching materials, cite the corresponding release. When describing the associated research, cite the paper as well. A release identifies the materials used even as the repository continues to develop.
 
@@ -34,7 +34,7 @@ Official software resources: [Bash](https://www.gnu.org/software/bash/), [dcm2ni
 
 MRI data are supplied by Senegal Alfred Mabry for this teaching project, which has IRB approval. Contact the maintainer for reuse beyond this project; the code and teaching-text licenses do not apply to the scans.
 
-This private preview has been checked on macOS. Linux and Windows/WSL workflows require further validation before classroom deployment.
+The current materials have been checked on macOS. Linux and Windows/WSL workflows require further validation before classroom deployment.
 
 ## Figures and reference sheets
 

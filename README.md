@@ -20,7 +20,7 @@ The five lessons introduce file navigation, scripting, MRI conversion, simulated
 
 Begin with Getting Started to prepare your computer, download a lesson, and open Terminal. Then follow the five lessons in order. Each lesson includes a practical task, written instructions, ways to check your work, instructional videos, and questions to guide your reflection video.
 
-This repository is currently a private preview. Invited users need a GitHub account to access it. After public release, downloading the lessons will not require an account; submitting feedback through GitHub will.
+The lessons and recordings are publicly available. Downloading the lessons does not require a GitHub account; submitting feedback through GitHub does. Feedback and the submitting GitHub username are public.
 
 ## The five lessons
 

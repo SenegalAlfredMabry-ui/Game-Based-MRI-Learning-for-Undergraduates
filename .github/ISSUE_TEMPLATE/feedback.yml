@@ -31,5 +31,5 @@ body:
     attributes:
       label: Visibility
       options:
-        - label: I understand that this report and my GitHub username will be visible when the repository is public. I have removed private information.
+        - label: I understand that this report and my GitHub username are public. I have removed private information.
           required: true
