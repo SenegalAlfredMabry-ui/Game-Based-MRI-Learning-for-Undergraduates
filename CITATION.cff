@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using the curriculum. The associated manuscript citation will be added when available."
+title: "Game-Based MRI Learning for Undergraduates"
+authors:
+  - family-names: Mabry
+    given-names: Senegal Alfred
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/SenegalAlfredMabry-ui/Game-Based-MRI-Learning-for-Undergraduates"

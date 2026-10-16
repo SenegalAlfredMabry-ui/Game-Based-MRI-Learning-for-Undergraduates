@@ -1,0 +1,138 @@
+Part A, Step 2 — Write the DICOM-to-NIfTI Conversion Script
+===========================================================
+
+Goal
+----
+
+Use nano to edit a script that converts two scan types for every subject:
+
+    MPRAGE
+    FLAIR
+
+This part combines Getting Hands-On with MRI #1: Converting DICOM to NIfTI and Learning Bash Scripting by Sorting a Wine Shed skills. From Scan
+Converter, reuse the idea that dcm2niix turns DICOM folders into NIfTI images
+and JSON sidecars. From Learning Bash Scripting by Sorting a Wine Shed, reuse nano, variables, repeated commands, and
+the idea that a script is useful when the same action must happen many times.
+
+Important command
+-----------------
+
+The command-line converter is spelled:
+
+    dcm2niix
+
+with two i's at the end.
+
+Step 1 — Open the student template
+----------------------------------
+
+Run:
+
+    nano scripts/convert_all_subjects_TEMPLATE.sh
+
+You will see TODO sections.
+
+Your job is to complete the script so it converts both MPRAGE and FLAIR DICOM
+folders for all six subjects.
+
+The template includes a helper called convert_scan. Use that helper instead of
+writing a totally new dcm2niix command from scratch. The helper still runs
+dcm2niix, but it also checks the folder, saves a log, and stops if dcm2niix
+prints error messages.
+
+Step 2 — Save your script
+-------------------------
+
+In nano:
+
+    Ctrl + O
+    Enter
+    Ctrl + X
+
+Step 3 — Run your script
+------------------------
+
+Run:
+
+    bash scripts/convert_all_subjects_TEMPLATE.sh
+
+If the script says SUBJECTS is empty, reopen it in nano and complete TODO 1.
+If it says dcm2niix was not found, the converter is not available in your
+current Terminal. Ask your instructor whether to install dcm2niix or load a
+module.
+
+For explicit setup options, read:
+
+    cat SOFTWARE_SETUP.txt
+
+If conversion still fails after dcm2niix is available, check one subject folder
+before changing the script:
+
+    ls raw_dicoms/sub-PD01
+    find raw_dicoms/sub-PD01/MPRAGE_DICOM -name "*.dcm" | wc -l
+    find raw_dicoms/sub-PD01/FLAIR_DICOM -name "*.dcm" | wc -l
+
+If you see MPRAGE_DICOM.zip and FLAIR_DICOM.zip but no MPRAGE_DICOM or
+FLAIR_DICOM folder yet, unpack the DICOM ZIPs first:
+
+    bash scripts/unpack_dicoms.sh
+
+The folders should contain DICOM files before the script can create NIfTI files.
+
+If you see messages like these:
+
+    Problem reading ECAT7 file!
+    Unable to find any DICOM images
+    Missing images
+    Check sorted order
+    Interslice distance varies
+    All subjects converted
+
+do not trust the final success message by itself. Those messages usually mean
+the script used the wrong input folder, the DICOM ZIPs were not unpacked, or
+dcm2niix created an incomplete output. The updated script saves logs in:
+
+    results/conversion_logs
+
+Read the log for the subject and scan that failed. Then check that the command
+is using the scan-specific input folder, such as:
+
+    raw_dicoms/sub-PD01/MPRAGE_DICOM
+    raw_dicoms/sub-PD01/FLAIR_DICOM
+
+not just:
+
+    raw_dicoms/sub-PD01
+    raw_dicoms
+
+Step 4 — Check the output
+-------------------------
+
+Run:
+
+    bash scripts/check_conversions.sh
+
+If this script reports missing files, do not move on to ITK-SNAP yet. Fix the
+conversion first.
+
+You should eventually see files like:
+
+    converted_niftis/sub-PD01/sub-PD01_MPRAGE.nii.gz
+    converted_niftis/sub-PD01/sub-PD01_MPRAGE.json
+    converted_niftis/sub-PD01/sub-PD01_FLAIR.nii.gz
+    converted_niftis/sub-PD01/sub-PD01_FLAIR.json
+
+Reflection checkpoint
+---------------------
+
+Open:
+
+    nano student_notes/part2_conversion_reflection.txt
+
+Answer these while the conversion script is still fresh.
+
+1. What did the conversion script do?
+2. Why did we convert both MPRAGE and FLAIR?
+3. What did dcm2niix create?
+4. Why is a script better than converting each subject by hand?
+5. What part of the script was most important?

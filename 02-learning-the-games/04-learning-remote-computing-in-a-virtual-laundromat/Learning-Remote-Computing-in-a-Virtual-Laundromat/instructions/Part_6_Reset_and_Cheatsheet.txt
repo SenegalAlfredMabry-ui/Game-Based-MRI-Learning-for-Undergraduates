@@ -1,0 +1,37 @@
+Learning Remote Computing in a Virtual Laundromat: Part 6 - Reset and Cheatsheet
+===========================================
+
+Reset options
+-------------
+
+Clear only generated outputs:
+
+    bash scripts/reset_outputs.sh
+
+This removes cleaned files, remote outputs, logs, jobs, and files currently in
+washer or remote_laundromat/incoming. It does not restore dirty files that were
+moved out of dirty_laundry.
+
+Full reset:
+
+    bash scripts/reset_outputs.sh --full
+
+This restores the original dirty_laundry folders from the built-in backup and
+clears generated outputs. Use this if you want to replay the game from Round 1.
+
+Cheatsheet
+----------
+
+pwd        show where you are
+ls         list files and folders
+cat        read a text file
+mv         move a file
+cp         copy a file
+bash       run a script
+for        repeat a command for many files
+ssh        real-world command for logging into another computer
+scp        real-world command for copying files to another computer
+sbatch     real-world command for submitting a cluster job
+
+In this game, ssh, scp, and sbatch are simulated with scripts. The goal is to
+learn the workflow idea before using a real server.

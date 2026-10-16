@@ -1,0 +1,197 @@
+# PART 2 - Command-Line DICOM-to-NIfTI Script
+
+## Goal
+
+Build a short script that converts the MPRAGE and FLAIR DICOM folders into NIfTI
+files with dcm2niix. Then review the scripted outputs in MRIcron using the same
+MPRAGE, FLAIR, contrast, and overlay process from Part 1.
+
+Part 2 is about moving from a GUI workflow to a reproducible code workflow.
+
+---
+
+## Step 1: Create the script output folder
+
+Use what you learned from the Learning Unix Basics in a Virtual House to create a folder named:
+
+    script_niftis
+
+Check your work with ls.
+
+Expected purpose:
+The script should put all command-line NIfTI and JSON outputs in script_niftis.
+
+Expected output names:
+
+    script_niftis/sub-001_MPRAGE.nii.gz
+    script_niftis/sub-001_MPRAGE.json
+    script_niftis/sub-001_FLAIR.nii.gz
+    script_niftis/sub-001_FLAIR.json
+
+Checkpoint:
+Why are we using a different folder from gui_niftis?
+
+---
+
+## Step 2: Open the script
+
+Use nano to open:
+
+    scripts/convert_one_subject.sh
+
+You have used nano in earlier games, so this is a reading/editing task, not a
+copying task. Move slowly through the script and identify what each block does.
+
+If your instructor asks you to rebuild the script, create a new script in the
+scripts folder and use the provided one as a guide.
+
+Checkpoint:
+What command did you use to open the script?
+
+---
+
+## Step 3: Read the header
+
+At the top of the script, find:
+
+    #!/bin/bash
+    set -e
+
+Guiding question:
+Why might it be helpful for a script to stop when a command fails instead of
+continuing after an error?
+
+---
+
+## Step 4: Read the variables
+
+Find the variables:
+
+    SUBJECT
+    DICOM_ROOT
+    OUT_DIR
+
+Do not skip this part. These variables control the subject, the input folder,
+and the output folder.
+
+Expected values for this game:
+
+    SUBJECT should point to sub-001
+    DICOM_ROOT should point to raw_dicoms/sub-001
+    OUT_DIR should point to script_niftis
+
+Checkpoint:
+If the next subject were sub-002, which variable would you change first?
+
+---
+
+## Step 5: Find the dcm2niix check
+
+Find the block that checks whether dcm2niix is available.
+
+Guiding question:
+Why is it better for the script to check for dcm2niix before trying to convert
+the scans?
+
+If this check fails, go back to Part 1 Step 1 and fix dcm2niix before continuing.
+
+---
+
+## Step 6: Break down the MPRAGE command
+
+Find the MPRAGE dcm2niix command.
+
+Identify these parts:
+
+    -z y
+    -b y
+    -f "${SUBJECT}_MPRAGE"
+    -o "$OUT_DIR"
+    "$DICOM_ROOT/MPRAGE_DICOM"
+
+Hints:
+
+    -z y controls compression
+    -b y controls JSON metadata
+    -f controls the output filename
+    -o controls the output folder
+    the final path is the input DICOM folder
+
+Checkpoint:
+Which part names the output file? Which part chooses the input DICOM folder?
+
+---
+
+## Step 7: Break down the FLAIR command
+
+Find the FLAIR dcm2niix command.
+
+Compare it to the MPRAGE command.
+
+Checkpoint:
+What changed between the MPRAGE command and the FLAIR command? What stayed the
+same?
+
+Reminder:
+MPRAGE and FLAIR should stay separate. Do not combine them into one file.
+
+---
+
+## Step 8: Run the script and check outputs
+
+Run the conversion script.
+
+Then inspect script_niftis and run the check script:
+
+    bash scripts/check_conversion.sh
+
+Expected outputs:
+
+    sub-001_MPRAGE.nii.gz
+    sub-001_MPRAGE.json
+    sub-001_FLAIR.nii.gz
+    sub-001_FLAIR.json
+
+Checkpoint:
+Did the script create the four expected files? If not, what message did the
+check script give you?
+
+---
+
+## Step 9: Review the scripted outputs in MRIcron
+
+Open the scripted MPRAGE output in MRIcron and review the anatomy again.
+
+Open the scripted FLAIR output in MRIcron and adjust contrast again.
+
+Then overlay scripted FLAIR on scripted MPRAGE:
+
+    Background:
+        script_niftis/sub-001_MPRAGE.nii.gz
+
+    Overlay:
+        script_niftis/sub-001_FLAIR.nii.gz
+
+Checkpoint:
+Did the scripted images look like the GUI-converted images from Part 1? What was
+similar or different?
+
+---
+
+## Step 10: Why use code after MRIcron?
+
+Answer this now, while the difference is fresh:
+
+    Why are we doing the conversion with code after already doing it with MRIcron?
+
+Use your own words. Think about:
+
+    repeating the same workflow
+    leaving a record of what happened
+    scaling to many subjects
+    reducing clicking mistakes
+    making it easier for another person to check your work
+
+Final checkpoint:
+What part of this workflow feels like something you could do again, and what
+part would you still want help with?

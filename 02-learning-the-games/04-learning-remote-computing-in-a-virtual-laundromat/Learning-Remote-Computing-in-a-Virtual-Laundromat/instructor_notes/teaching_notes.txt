@@ -1,0 +1,81 @@
+Instructor Notes — Full Learning Remote Computing in a Virtual Laundromat
+====================================
+
+Purpose
+-------
+
+This game bridges from basic terminal skills and scripting into remote-computing logic.
+
+Do not present it as real ssh/scp/sbatch practice. It is a simulation designed to teach concepts before students touch real servers.
+
+Core sequence
+-------------
+
+Round 1:
+Manual local movement. Input → process → output → check.
+
+Round 2:
+More files. Students feel the limits of manual work and use a wildcard.
+
+Round 3:
+A loop script moves many files automatically.
+
+Round 4:
+Fake remote workflow. Students learn that files must be on the remote computer before the remote computer can process them.
+
+Suggested analogy:
+The laptop is the home washer. The server is the PI Laundromat or dry cleaner.
+Some laundry is too large or too specialized to do at home, so students have to
+go to another place with the right equipment. In MRI research, that other place
+is often a server or cluster.
+
+Round 5:
+Fake batch job. Students submit a job, check a log, and inspect outputs.
+
+Instruction style
+-----------------
+
+The main round files are intentionally less copy-paste than the first draft.
+They give students the goal, relevant folders, and command ideas, then ask them
+to build the command. The original command-heavy directions are preserved in:
+
+instructions/stuck_instructions/
+
+Use those files as a scaffold after students have tried the guided round. A good
+teaching rhythm is:
+
+1. Let students attempt the guided step.
+2. Ask what they checked with pwd or ls.
+3. Ask which folder is the input and which folder is the output.
+4. Let them open the stuck instruction only if they cannot proceed.
+5. Have them record what help they needed in the round reflection.
+
+Suggested analogy:
+Submitting a job is like leaving a coat with the dry-cleaning clerk. The clerk
+puts it in line, it gets cleaned later, and the receipt tells you what happened.
+The log is the research-computing version of that receipt.
+
+MRI connection
+--------------
+
+Use this language:
+"The clothing files are placeholders for data. The washer is the processing step. The clean_laundry folder is the output folder. The check scripts are quality-control steps."
+
+Reflection pacing
+-----------------
+
+Students responded well to stopping after each stage. Keep the round-specific
+reflection files in the workflow:
+
+student_notes/round1_reflection.txt
+student_notes/round2_reflection.txt
+student_notes/round3_reflection.txt
+student_notes/round4_reflection.txt
+student_notes/round5_reflection.txt
+
+Ask students to open the matching file with nano immediately after each round.
+
+Do not say:
+"These images are MRI files."
+
+They are regular PNGs.

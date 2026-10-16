@@ -1,0 +1,164 @@
+Learning Remote Computing in a Virtual Laundromat FAQ
+================
+
+Why are we playing a laundry game?
+----------------------------------
+
+Because remote computing and batch processing can feel abstract at first.
+
+Laundry gives us a simple metaphor:
+
+    dirty items go in
+    a process runs
+    clean items come out
+    then we check the outputs
+
+Later, MRI workflows work the same way:
+
+    raw data goes in
+    a script runs
+    processed outputs come out
+    then we check the outputs
+
+What is the goal?
+-----------------
+
+The goal is not to memorize commands or copy and paste the whole game.
+
+The goal is to understand the shape of a workflow:
+
+    input  →  process  →  output  →  check
+
+By the end of the game, you should understand why researchers use scripts, servers, batch jobs, and logs.
+
+Why do the main instructions give hints instead of every command?
+----------------------------------------------------------------
+
+Students said the earlier version was too easy to copy and paste. The main
+round files now ask you to build some commands from the goal, folder names, and
+command idea.
+
+If you are truly stuck, use:
+
+    instructions/stuck_instructions/
+
+Those files keep the more explicit command examples. Use them as help, not as
+the first thing you read.
+
+Why do some rounds talk about a laundromat or dry cleaner?
+---------------------------------------------------------
+
+Those analogies explain remote computing.
+
+Your home washer is like your laptop. It can handle small jobs.
+
+A laundromat or dry cleaner is like a server or cluster. It has bigger machines,
+special tools, and a system for handling many jobs.
+
+In research, MRI files can be too large or repetitive for a normal laptop, so
+researchers send work to another computer and check the outputs afterward.
+
+What is a log?
+--------------
+
+A log is like a dry-cleaning receipt. It records what happened to the job.
+
+In real research computing, logs help you answer:
+
+    Did the job run?
+    When did it run?
+    What files did it process?
+    Did anything go wrong?
+
+What commands will I use?
+-------------------------
+
+You will use:
+
+    pwd      check where you are
+    ls       list files
+    mv       move files
+    cp       copy files
+    bash     run scripts
+    for      loop through many files
+
+You will also practice the ideas behind:
+
+    ssh      logging into another computer
+    scp      copying files to another computer
+    sbatch   submitting a job to a cluster scheduler
+
+In this game, ssh, scp, and sbatch are simulated. That means they are fake versions designed for learning.
+
+What should I do if something goes wrong?
+-----------------------------------------
+
+Start with:
+
+    pwd
+    ls
+    cat README.txt
+
+Then check the folder involved in the task:
+
+    ls dirty_laundry
+    ls washer
+    ls clean_laundry
+    ls remote_laundromat/incoming
+    ls remote_laundromat/logs
+
+Common problem: "No dirty clothes found"
+----------------------------------------
+
+The files are probably not in the folder where the script is looking.
+
+Check:
+
+    ls washer
+
+or:
+
+    ls remote_laundromat/incoming
+
+Common problem: "No such file or directory"
+-------------------------------------------
+
+You may be in the wrong folder, or the file may have already been moved.
+
+Use:
+
+    pwd
+    ls
+
+Can I open the clothing images in MRIcron or MRIcroGL?
+-----------------------------------------------------
+
+No. These are normal PNG images, not MRI images.
+
+MRIcron/MRIcroGL is for neuroimaging formats like NIfTI.
+
+This game teaches workflow logic. The Getting Hands-On with MRI #1: Converting DICOM to NIfTI teaches real MRI image formats.
+
+Where should I look first?
+--------------------------
+
+1. README.txt
+2. instructions/Part_0_Before_You_Start.txt
+3. The instruction file for the round you are playing
+4. FAQ.txt
+5. pwd
+6. ls
+7. The script you are running
+8. The round-specific reflection file in student_notes
+9. The matching file in instructions/stuck_instructions if you have already tried
+
+How do I reset the game?
+------------------------
+
+To clear generated outputs only:
+
+    bash scripts/reset_outputs.sh
+
+To restore the original dirty laundry and replay from the beginning:
+
+    bash scripts/reset_outputs.sh --full

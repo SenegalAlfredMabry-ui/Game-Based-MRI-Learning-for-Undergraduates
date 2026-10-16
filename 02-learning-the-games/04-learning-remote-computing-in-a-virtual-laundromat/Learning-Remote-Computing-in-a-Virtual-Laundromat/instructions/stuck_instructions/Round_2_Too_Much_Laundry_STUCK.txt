@@ -1,0 +1,74 @@
+Round 2 — Too Much Laundry
+==========================
+
+Goal
+----
+
+Work with more dirty items and notice why doing everything one file at a time becomes annoying.
+
+What this teaches
+-----------------
+
+When there are only three files, manual movement is okay.
+When there are many files, manual movement starts to feel repetitive.
+
+That is the moment where scripting begins to make sense.
+
+Step 1 — Look at the bigger load
+--------------------------------
+
+Run:
+
+    ls dirty_laundry/round2_big_load
+
+Step 2 — Try moving a few by hand
+---------------------------------
+
+Run:
+
+    mv dirty_laundry/round2_big_load/shirt_dirty.png washer/
+    mv dirty_laundry/round2_big_load/pants_dirty.png washer/
+
+Now pause.
+
+This worked, but imagine doing this for 100 files or 1,000 files.
+
+Step 3 — Use a wildcard to move the rest
+----------------------------------------
+
+Run:
+
+    mv dirty_laundry/round2_big_load/*_dirty.png washer/
+
+The star is a wildcard. In this command, *_dirty.png means:
+
+    find every file in dirty_laundry/round2_big_load
+    where the filename ends in _dirty.png
+
+So this one command moves all matching dirty PNG files instead of making you
+type one mv command for each image.
+
+Step 4 — Wash the load
+----------------------
+
+Run:
+
+    bash scripts/local_washer.sh
+
+Step 5 — Check the outputs
+--------------------------
+
+Run:
+
+    ls clean_laundry
+    bash scripts/check_local_laundry.sh
+
+Reflection
+----------
+
+Open the Round 2 notes:
+
+    nano student_notes/round2_reflection.txt
+
+For this round, pay special attention to:
+What became annoying to do manually?

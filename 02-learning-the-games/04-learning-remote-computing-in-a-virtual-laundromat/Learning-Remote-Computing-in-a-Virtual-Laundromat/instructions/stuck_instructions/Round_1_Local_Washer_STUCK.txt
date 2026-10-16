@@ -1,0 +1,88 @@
+Round 1 — Local Washer
+======================
+
+Goal
+----
+
+Move dirty clothes into the washer by hand, run one local script, and check whether clean clothes appeared.
+
+What this teaches
+-----------------
+
+This round teaches the simplest research workflow:
+
+    input files  →  processing folder  →  script  →  output files  →  check result
+
+Step 1 — Check where you are
+----------------------------
+
+Run:
+
+    pwd
+    ls
+
+Step 2 — Look at the dirty clothes
+----------------------------------
+
+Run:
+
+    ls dirty_laundry/round1_local
+
+You should see:
+
+    shirt_dirty.png
+    pants_dirty.png
+    socks_dirty.png
+
+Open the images if you can. They should look dirty.
+
+On macOS, open one image with:
+
+    open dirty_laundry/round1_local/shirt_dirty.png
+
+On Linux, try:
+
+    xdg-open dirty_laundry/round1_local/shirt_dirty.png
+
+If neither command works, you can still complete the game by using ls and the
+clean-output checks.
+
+Step 3 — Move the clothes into the washer
+-----------------------------------------
+
+Run:
+
+    mv dirty_laundry/round1_local/shirt_dirty.png washer/
+    mv dirty_laundry/round1_local/pants_dirty.png washer/
+    mv dirty_laundry/round1_local/socks_dirty.png washer/
+
+Check the washer:
+
+    ls washer
+
+Step 4 — Run the local washer
+-----------------------------
+
+Run:
+
+    bash scripts/local_washer.sh
+
+Step 5 — Check the clean laundry
+--------------------------------
+
+Run:
+
+    ls clean_laundry
+
+You can also run:
+
+    bash scripts/check_local_laundry.sh
+
+Reflection
+----------
+
+Open the Round 1 notes:
+
+    nano student_notes/round1_reflection.txt
+
+Answer the questions while the local washer workflow is still fresh.

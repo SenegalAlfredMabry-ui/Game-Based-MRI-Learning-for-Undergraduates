@@ -1,0 +1,32 @@
+Universal Reflection Questions
+==============================
+
+Answer these after each game or round.
+You can write the answers and then record a short video explaining them.
+
+This file gives the general pattern. Each round also has its own smaller
+reflection file in student_notes/round1_reflection.txt through
+student_notes/round5_reflection.txt.
+
+1. What did this game teach you how to do?
+
+Name the main skill or command you practiced. Then explain it in your own words.
+
+2. What was one moment where you got stuck, confused, or had to slow down?
+
+Describe what happened and what you did next.
+
+3. What command, file, or folder felt most important in this game?
+
+Pick one and explain why it mattered or how you would suggest someone else use it.
+
+4. How do you think this game might help you with real research or MRI work?
+
+Explain the connection between the game task and something a researcher might actually do.
+
+5. What would you do first if you had to solve a similar problem on your own?
+
+Explain the first step you would take and why. This could be checking where you are, listing files, reading instructions, opening a script, testing one command, or asking what the input and output should be.
+
+Round-specific bonus question:
+What did this round make easier to understand than before?

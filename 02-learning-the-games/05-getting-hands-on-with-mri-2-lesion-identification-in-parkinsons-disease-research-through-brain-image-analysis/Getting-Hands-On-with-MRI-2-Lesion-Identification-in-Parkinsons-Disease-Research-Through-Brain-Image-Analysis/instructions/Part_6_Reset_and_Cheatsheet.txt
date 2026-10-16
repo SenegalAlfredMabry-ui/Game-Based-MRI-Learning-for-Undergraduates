@@ -1,0 +1,53 @@
+Lesson 5: Part B, Step 3 - Reset and Cheatsheet
+===============================================
+
+Reset
+-----
+
+To clear generated conversion outputs, lesion masks, and results:
+
+    bash scripts/reset_outputs.sh
+
+This keeps the folder structure, zipped DICOM inputs, and any unpacked DICOM
+folders in raw_dicoms.
+
+
+Cheatsheet
+----------
+
+pwd                          show where you are
+ls                           list files and folders
+cat                          read a text file
+nano                         edit a script or notes file
+bash script.sh               run a shell script
+unzip                        unpack ZIP files
+dcm2niix                     convert DICOM folders to NIfTI files
+ITK-SNAP                     open MRI images and draw masks
+python3                      run the included mask measurement helper
+measure_nifti_label1.py      count voxels labeled 1 in a NIfTI mask
+
+
+Expected output folders
+-----------------------
+
+converted_niftis/
+    NIfTI image outputs and JSON metadata from dcm2niix
+
+lesion_masks/
+    Student-created lesion mask files from ITK-SNAP
+
+results/
+    CSV counts, measurement error notes, and group comparison text
+
+
+If something fails
+------------------
+
+1. Run pwd.
+2. Run ls.
+3. Check the instruction file for the current part.
+4. Check whether required Terminal tools exist with command -v.
+5. Remember that ITK-SNAP usually opens like a regular app.
+6. Check whether the expected input file exists before rerunning the script.
+7. Read SOFTWARE_SETUP.txt if dcm2niix, ITK-SNAP, or python3 is missing.
+8. Read results/lesion_voxel_counts.csv if the group comparison looks wrong.

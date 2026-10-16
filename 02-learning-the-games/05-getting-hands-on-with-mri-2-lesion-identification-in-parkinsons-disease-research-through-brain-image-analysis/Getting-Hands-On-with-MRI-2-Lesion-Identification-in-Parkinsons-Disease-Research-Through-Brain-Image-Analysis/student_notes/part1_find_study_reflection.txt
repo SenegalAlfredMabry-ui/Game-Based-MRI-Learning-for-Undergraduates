@@ -1,0 +1,21 @@
+Part 1 Find the Study Reflection
+================================
+
+Open this file after you finish Part 1:
+
+    nano student_notes/part1_find_study_reflection.txt
+
+Answer before moving to conversion.
+
+1. Where are the raw DICOM folders?
+
+2. Where will the converted NIfTI files go?
+
+3. Where will the lesion masks be saved?
+
+4. Which subjects are PD and which subjects are controls?
+
+5. Why does finding the correct folder matter before running an analysis?
+
+6. What command helped you check where you were or what was inside a folder?
+

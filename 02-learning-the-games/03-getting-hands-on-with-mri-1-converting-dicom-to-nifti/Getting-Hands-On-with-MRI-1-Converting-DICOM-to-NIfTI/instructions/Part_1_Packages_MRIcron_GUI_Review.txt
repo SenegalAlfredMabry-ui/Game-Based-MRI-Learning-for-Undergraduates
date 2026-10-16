@@ -1,0 +1,308 @@
+# PART 1 - Packages, MRIcron GUI Conversion, and Image Review
+
+## Goal
+
+Set up the tools, unpack the DICOM folders, convert the scans with the MRIcron
+GUI, review each scan separately, and overlay FLAIR on top of MPRAGE.
+
+Part 1 is about seeing what conversion does before writing code.
+
+---
+
+## Step 1: Install/check dcm2niix very carefully
+
+You need dcm2niix for Part 2. This setup step should be explicit because small
+spelling or install issues can stop the rest of the game.
+
+The command is:
+
+    dcm2niix
+
+It has two i's at the end. These will usually fail:
+
+    DICOM2NIfTI
+    DICOM2Nifit
+    dicom2nifti
+    dcm2nifti
+
+Open Terminal and run:
+
+    dcm2niix -h
+
+If help text appears, dcm2niix is usable.
+
+If you see command not found, choose the option that matches your computer.
+
+Important concept:
+Installing a program and making Terminal able to find it are not always the same
+thing. If dcm2niix -h fails, the program may be missing, or it may be installed
+but not on your PATH.
+
+macOS with Homebrew:
+
+    brew install dcm2niix
+    dcm2niix -h
+
+macOS or Linux with conda:
+
+    conda install -c conda-forge dcm2niix
+    dcm2niix -h
+
+Linux with apt:
+
+    sudo apt-get update
+    sudo apt-get install dcm2niix
+    dcm2niix -h
+
+If your instructor gave you a downloaded dcm2niix file, try running it by path.
+For example:
+
+    ~/Downloads/dcm2niix -h
+
+If that works, keep track of the full path. You may need it in Part 2.
+
+After installing, close and reopen Terminal, then try:
+
+    dcm2niix -h
+
+Useful links:
+
+    dcm2niix GitHub:
+        https://github.com/rordenlab/dcm2niix
+
+    dcm2niix releases/downloads:
+        https://github.com/rordenlab/dcm2niix/releases
+
+    Homebrew install page:
+        https://formulae.brew.sh/formula/dcm2niix
+
+    PyPI install notes:
+        https://pypi.org/project/dcm2niix/
+
+Troubleshooting order:
+
+    1. Check spelling: dcm2niix -h
+    2. Try the install option for your computer.
+    3. Close and reopen Terminal, then try dcm2niix -h again.
+    4. If you downloaded dcm2niix manually, try the full path.
+    5. If the full path works, write it down.
+    6. If none of these work, ask your instructor for help before Part 2.
+
+Checkpoint:
+In student_notes/conversion_questions.txt, write what happened when you ran
+dcm2niix -h and what fixed it if it failed.
+
+---
+
+## Step 2: Install/open MRIcron
+
+Use MRIcron for the GUI part of this game.
+
+Open MRIcron before moving on. If MRIcron does not open, stop and fix that with
+your instructor before doing the conversion.
+
+Checkpoint:
+Write down whether MRIcron opened successfully.
+
+---
+
+## Step 3: Find the game folder
+
+Use the navigation skills from the Learning Unix Basics in a Virtual House.
+
+Get into the Scan Converter game folder, then check where you are and what is
+inside. You should be in:
+
+    Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI
+
+Expected folders:
+
+    raw_dicoms_zipped
+    raw_dicoms
+    scripts
+    instructions
+    student_notes
+
+Checkpoint:
+What command showed you that you were in the correct folder?
+
+---
+
+## Step 4: Unpack and inspect the DICOM folders
+
+Run the setup script:
+
+    bash scripts/setup_data.sh
+
+Then use ls, head, and wc -l to inspect the MPRAGE and FLAIR DICOM folders.
+
+Folders to inspect:
+
+    raw_dicoms/sub-001/MPRAGE_DICOM
+    raw_dicoms/sub-001/FLAIR_DICOM
+
+Expected counts after setup:
+
+    MPRAGE: 201 files
+    FLAIR: 45 files
+
+Checkpoint:
+Does one MRI scan look like one file or many files before conversion?
+
+---
+
+## Step 5: Create the GUI output folder
+
+Use what you learned in earlier games to create a new folder named:
+
+    gui_niftis
+
+Do not put spaces in the folder name.
+
+Check your work:
+
+    ls
+
+Expected result:
+You should see gui_niftis listed with the other game folders.
+
+Checkpoint:
+Why is it useful to keep GUI outputs in their own folder instead of mixing them
+with raw DICOM folders?
+
+---
+
+## Step 6: Convert MPRAGE with MRIcron
+
+Open MRIcron and find the DICOM conversion tool. Depending on the version, it may
+be under a menu named:
+
+    Import
+    Import DICOM
+    DICOM to NIfTI
+    dcm2niix
+
+Use these choices:
+
+    Input folder:
+        raw_dicoms/sub-001/MPRAGE_DICOM
+
+    Output folder:
+        gui_niftis
+
+After conversion, inspect gui_niftis from Terminal.
+
+MRIcron may create a long filename. Rename the MPRAGE output so the class has a
+consistent filename:
+
+    sub-001_MPRAGE_GUI.nii.gz
+
+If MRIcron created .nii instead of .nii.gz, keep .nii and use:
+
+    sub-001_MPRAGE_GUI.nii
+
+Checkpoint:
+What command did you use to confirm the MPRAGE output was in gui_niftis?
+
+---
+
+## Step 7: Convert FLAIR with MRIcron
+
+Use MRIcron again with:
+
+    Input folder:
+        raw_dicoms/sub-001/FLAIR_DICOM
+
+    Output folder:
+        gui_niftis
+
+After conversion, inspect gui_niftis from Terminal.
+
+Rename the FLAIR output so the class has a consistent filename:
+
+    sub-001_FLAIR_GUI.nii.gz
+
+If MRIcron created .nii instead of .nii.gz, keep .nii and use:
+
+    sub-001_FLAIR_GUI.nii
+
+Checkpoint:
+Why should MPRAGE and FLAIR become two separate NIfTI images instead of one
+combined file?
+
+---
+
+## Step 8: Review MPRAGE by itself
+
+Open the MPRAGE output in MRIcron.
+
+MPRAGE is the anatomical scan. Use it to review brain structure.
+
+Look for:
+
+    gray matter and white matter contrast
+    ventricles
+    cortical folds
+    overall brain shape
+
+Checkpoint:
+Write one sentence: what does MPRAGE make easiest to see?
+
+---
+
+## Step 9: Review FLAIR by itself and adjust contrast
+
+Open the FLAIR output in MRIcron.
+
+FLAIR suppresses much of the free-fluid signal and can make some bright
+abnormalities or white-matter hyperintensities easier to notice than they are on
+MPRAGE.
+
+Before judging the image, adjust the FLAIR contrast/brightness/display range.
+
+Try to find a setting where:
+
+    background is not washed out
+    brain tissue is visible
+    bright FLAIR signal stands out
+    ventricles and edges are still understandable
+
+Try at least two settings:
+
+    one that is clearly not useful
+    one that makes the FLAIR easier to review
+
+Checkpoint:
+What changed when you adjusted the FLAIR contrast? What setting felt most useful?
+
+---
+
+## Step 10: Overlay FLAIR on MPRAGE
+
+In MRIcron, open MPRAGE as the main/background image.
+
+Then add FLAIR as an overlay. Depending on your MRIcron version, look for:
+
+    Overlay
+    Add overlay
+    Open overlay
+
+Use:
+
+    Background:
+        gui_niftis/sub-001_MPRAGE_GUI.nii.gz
+
+    Overlay:
+        gui_niftis/sub-001_FLAIR_GUI.nii.gz
+
+If your files end in .nii, use the .nii filenames instead.
+
+Adjust the FLAIR overlay contrast/transparency so you can still see the MPRAGE
+anatomy underneath.
+
+Checkpoint:
+What is easier to understand with the overlay than with either scan alone?
+
+Before Part 2:
+Write one sentence explaining why clicking through MRIcron might become
+difficult if you had many subjects.

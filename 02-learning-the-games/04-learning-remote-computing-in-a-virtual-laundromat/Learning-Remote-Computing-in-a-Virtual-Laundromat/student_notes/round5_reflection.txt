@@ -1,0 +1,22 @@
+Round 5 Reflection - Laundry Cluster Job
+========================================
+
+Open this after Round 5:
+
+    nano student_notes/round5_reflection.txt
+
+1. In the dry-cleaner analogy, what does submitting a job mean?
+
+
+2. What is the log like in the dry-cleaner analogy?
+
+
+3. What did submit_laundry_job.sh do?
+
+
+4. What did the latest_job.log file tell you?
+
+
+5. Why are logs useful in real research computing?
+
+

@@ -1,0 +1,87 @@
+SCAN CONVERTER / NIFTI GAME FAQ
+===============================
+
+What is the goal?
+Convert MRI DICOM folders into NIfTI images and JSON metadata. First you do it
+with MRIcron so you can see what is happening. Then you do it with dcm2niix and
+a script so the workflow becomes reproducible.
+
+What is the command called?
+The command-line tool is:
+
+    dcm2niix
+
+It has two i's at the end. DICOM2NIfTI is the workflow name, not the exact
+Terminal command.
+
+What are the two parts?
+Part 1 is package setup, MRIcron GUI conversion, individual scan review, FLAIR
+contrast review, and FLAIR-on-MPRAGE overlay.
+
+Part 2 is command-line conversion with dcm2niix, writing/reading a short script,
+checking output names, and reviewing the scripted NIfTI files.
+
+Where should outputs go?
+GUI outputs from MRIcron:
+
+    gui_niftis/
+
+Script outputs from dcm2niix:
+
+    script_niftis/
+
+Expected script outputs:
+
+    script_niftis/sub-001_MPRAGE.nii.gz
+    script_niftis/sub-001_MPRAGE.json
+    script_niftis/sub-001_FLAIR.nii.gz
+    script_niftis/sub-001_FLAIR.json
+
+What if dcm2niix -h fails?
+Check spelling first. Then install or make dcm2niix available:
+
+    brew install dcm2niix
+    conda install -c conda-forge dcm2niix
+    sudo apt-get install dcm2niix
+
+If your instructor gave you a downloaded dcm2niix file, try running it by path,
+for example:
+
+    ~/Downloads/dcm2niix -h
+
+Installing a program and making Terminal able to find it are not always the same
+thing. If dcm2niix -h fails, the program may be installed but not on your PATH.
+After installing, close and reopen Terminal, then try dcm2niix -h again.
+
+Useful links:
+
+    dcm2niix GitHub:
+        https://github.com/rordenlab/dcm2niix
+
+    dcm2niix releases/downloads:
+        https://github.com/rordenlab/dcm2niix/releases
+
+    Homebrew install page:
+        https://formulae.brew.sh/formula/dcm2niix
+
+    PyPI install notes:
+        https://pypi.org/project/dcm2niix/
+
+What should I review in MRIcron?
+Review MPRAGE by itself first. It is the anatomical reference scan.
+
+Review FLAIR by itself next. Adjust contrast so bright FLAIR signal stands out
+without washing out the rest of the brain.
+
+Then open MPRAGE as the background and FLAIR as the overlay. Use transparency or
+display controls so you can still understand the anatomy underneath.
+
+Where should I ask for help?
+Share:
+
+    the command you ran
+    the exact error message
+    pwd
+    ls
+    ls gui_niftis
+    ls script_niftis

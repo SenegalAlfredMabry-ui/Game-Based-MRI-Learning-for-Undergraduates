@@ -1,0 +1,123 @@
+Part A, Step 3 - Open, Review, and Compare Images in ITK-SNAP
+=============================================================
+
+Goal
+----
+
+Open one subject's FLAIR and MPRAGE images in ITK-SNAP, review each scan by
+itself, and then compare them before drawing any lesion masks.
+
+By the end of this part, you should be able to say:
+
+    I know where my converted NIfTI files are.
+    I can open a FLAIR image in ITK-SNAP.
+    I can open or compare a MPRAGE image in ITK-SNAP.
+    I can explain why FLAIR and MPRAGE show different information.
+
+
+Step 1 - Confirm the converted files exist
+------------------------------------------
+
+Use what you already practiced in the House, Wine, Laundry, and Scan Converter
+games. Start by checking where you are and listing the folders.
+
+You are looking for files like:
+
+    converted_niftis/sub-PD01/sub-PD01_FLAIR.nii.gz
+    converted_niftis/sub-PD01/sub-PD01_MPRAGE.nii.gz
+
+Pause question:
+    Which command tells you where you are before you start opening files?
+
+
+Step 2 - Open ITK-SNAP
+----------------------
+
+Open ITK-SNAP from your Applications folder, Launchpad, Start menu, or the
+normal app menu on your computer.
+
+If ITK-SNAP will not open, stop and read:
+
+    cat SOFTWARE_SETUP.txt
+
+Do not skip this problem. If the viewer does not open, the marking step will
+not work.
+
+
+Step 3 - Review the FLAIR first
+-------------------------------
+
+Load the FLAIR as the main image.
+
+For the first practice subject, use:
+
+    converted_niftis/sub-PD01/sub-PD01_FLAIR.nii.gz
+
+In ITK-SNAP, move through the slices slowly. FLAIR is especially useful because
+fluid signal is suppressed and many lesion-like white matter hyperintensities
+can appear brighter than the surrounding tissue.
+
+Adjust the display/contrast if the FLAIR looks too dark, washed out, or flat.
+You are trying to make bright lesion-like regions visible without turning the
+whole brain bright.
+
+Pause question:
+    What looks bright on the FLAIR image, and what looks dark?
+
+
+Step 4 - Review the MPRAGE separately
+-------------------------------------
+
+Now review the MPRAGE for the same subject.
+
+Use:
+
+    converted_niftis/sub-PD01/sub-PD01_MPRAGE.nii.gz
+
+MPRAGE gives a strong structural/anatomical view. It is useful for checking
+where you are in the brain and whether a bright area on FLAIR makes anatomical
+sense.
+
+Pause question:
+    What does the MPRAGE make easier to see than the FLAIR?
+
+
+Step 5 - Compare FLAIR and MPRAGE
+---------------------------------
+
+If your ITK-SNAP version lets you add another image, load FLAIR as the main
+image and add MPRAGE as an additional image or overlay. If your version does
+not make that easy, open the two images one at a time and compare the same
+slice location carefully.
+
+You can also run this helper to print the exact files for a subject:
+
+    bash scripts/open_subject_in_itksnap_TEMPLATE.sh sub-PD01
+
+If your computer has an ITK-SNAP command-line launcher, the helper may open the
+images. If not, it will still tell you which files to load manually.
+
+Pause question:
+    Why is it useful to compare the FLAIR to the MPRAGE before drawing a mask?
+
+
+Step 6 - Write a short checkpoint
+---------------------------------
+
+Open:
+
+    nano student_notes/part3_itksnap_reflection.txt
+
+Answer the checkpoint questions before starting Part B.
+
+
+Part A stop point
+-----------------
+
+Before moving on, confirm that you can:
+
+1. Find the converted NIfTI files.
+2. Open FLAIR in ITK-SNAP.
+3. Open or compare MPRAGE in ITK-SNAP.
+4. Adjust the FLAIR display so bright regions are visible.
+5. Explain what FLAIR and MPRAGE each help you inspect.

@@ -1,0 +1,149 @@
+Lesson 5 Software Setup: Getting Hands-On with MRI #2: Lesion Identification in Parkinson's Disease Research Through Brain Image Analysis
+=========================================================================================================================================
+
+This game uses three tools:
+
+    dcm2niix    converts DICOM folders into NIfTI images
+    ITK-SNAP    opens MRI images and lets you draw lesion masks
+    python3     measures the masks after you save them
+
+Quick setup check
+-----------------
+
+From the Lesson 5 game folder, run:
+
+    bash scripts/check_setup.sh
+
+Then check the two command-line tools directly:
+
+    command -v dcm2niix
+    command -v python3
+
+If either command prints a path, Terminal can find it. If a command prints
+nothing, read the section below for that tool.
+
+ITK-SNAP is usually opened from your Applications folder, not from Terminal. To
+test ITK-SNAP, open the app and confirm that the main window appears.
+
+
+dcm2niix
+--------
+
+What it does:
+    dcm2niix converts a folder of MRI DICOM files into a NIfTI image file
+    plus a JSON sidecar file.
+
+Why it matters:
+    MRI scanners often export DICOM folders. Many research tools expect NIfTI
+    images. Conversion is one of the first real steps in an MRI workflow.
+
+Official download:
+    https://github.com/rordenlab/dcm2niix
+
+If you are on a Mac:
+
+1. Download the current dcm2niix release from the official GitHub page or use
+   Homebrew if your instructor recommends it.
+
+2. If you downloaded a zipped release, unzip it.
+
+3. Find the dcm2niix executable.
+
+4. Put the executable somewhere you can find it again, such as:
+
+       Applications
+       Downloads
+       a lab software folder
+
+5. Test from Terminal:
+
+       dcm2niix -h
+
+6. If Terminal says command not found, the program may be installed but not on
+   your PATH. Ask your instructor whether to move the executable into a folder
+   Terminal already searches, or whether to run it using its full path.
+
+Example of using a full path:
+
+    /Applications/dcm2niix -h
+
+The exact path may be different on your computer.
+
+If macOS blocks the program:
+
+1. Confirm that the file came from the official dcm2niix GitHub page or your
+   instructor.
+
+2. Try right-clicking the program and choosing Open.
+
+3. If that does not work, go to System Settings, then Privacy & Security, and
+   look for a message about the blocked app. Choose Open Anyway only if you are
+   sure the file came from an approved source.
+
+
+ITK-SNAP
+--------
+
+What it does:
+    ITK-SNAP is the image viewer and manual segmentation tool for this game.
+    You will use it to review FLAIR and MPRAGE images and draw lesion masks.
+
+Why it matters:
+    The analysis script only needs a saved NIfTI mask where lesion voxels are
+    labeled 1 and background voxels are labeled 0. ITK-SNAP can create that
+    kind of mask with the ITK-SNAP workflow.
+
+Official download:
+    http://www.itksnap.org/
+
+Basic install steps:
+
+1. Go to the official ITK-SNAP website.
+
+2. Download the installer for your computer.
+
+3. Install ITK-SNAP.
+
+4. Open ITK-SNAP from Applications, Launchpad, or your normal app menu.
+
+5. Confirm that the main ITK-SNAP window opens.
+
+If macOS blocks ITK-SNAP:
+
+1. Confirm that the installer came from the official ITK-SNAP website or your
+   instructor.
+
+2. Try right-clicking ITK-SNAP and choosing Open.
+
+3. If macOS still blocks it, go to System Settings, then Privacy & Security,
+   and look for a message about ITK-SNAP. Choose Open Anyway only if the
+   source is approved.
+
+
+python3
+-------
+
+What it does:
+    python3 runs the mask measurement helper script included in this game.
+
+Test it:
+
+    python3 --version
+
+If python3 is missing, ask your instructor which installation path your course
+uses. On many Macs, installing the current Python from python.org or using a
+lab-managed setup is enough.
+
+
+When to ask for help
+--------------------
+
+Ask for help before moving on if:
+
+    dcm2niix -h does not show help text
+    python3 --version does not print a version
+    ITK-SNAP will not open
+    ITK-SNAP opens but will not let you create or save a segmentation
+
+Bring the exact error message, the command you typed, and a screenshot if the
+problem happened inside ITK-SNAP.

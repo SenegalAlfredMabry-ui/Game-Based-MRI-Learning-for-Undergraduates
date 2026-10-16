@@ -1,0 +1,95 @@
+Round 4 — PI Laundromat
+=======================
+
+Goal
+----
+
+Practice the ideas behind logging into a remote computer and copying files to it.
+
+In real research, this might be a server or computing cluster.
+In this game, it is a fake folder called:
+
+    remote_laundromat/
+
+What this teaches
+-----------------
+
+ssh means: connect to another computer.
+scp means: copy files to another computer.
+
+In this game, both are simulated with scripts.
+
+Laundry analogy:
+Imagine you have too much laundry for your small washer at home, or you have
+special dry-clean-only clothes that your home washer should not handle. You need
+to go somewhere else: a laundromat or dry cleaner with bigger machines and
+special equipment.
+
+Remote research analogy:
+MRI data can be too large or too computationally demanding for a normal laptop.
+Instead of doing everything "at home" on your own computer, researchers log into
+another computer, server, or cluster that has the data, software, storage, and
+processing power needed for the job.
+
+In this round:
+
+    fake_ssh.sh = pretending to log into the PI Laundromat
+    fake_scp.sh = pretending to send files to that remote place
+    remote_washer.sh = pretending to process files on the remote computer
+
+Step 1 — Fake login
+-------------------
+
+Run:
+
+    bash scripts/fake_ssh.sh student@pi-laundromat
+
+When it asks for the password, type:
+
+    spin-cycle-42
+
+Step 2 — Look at the remote load
+--------------------------------
+
+Run:
+
+    ls dirty_laundry/round4_remote_load
+
+Step 3 — Send files to the PI Laundromat
+----------------------------------------
+
+Run:
+
+    bash scripts/fake_scp.sh dirty_laundry/round4_remote_load remote_laundromat/incoming
+
+Step 4 — Check the remote incoming folder
+-----------------------------------------
+
+Run:
+
+    ls remote_laundromat/incoming
+
+Step 5 — Run the remote washer
+------------------------------
+
+Run:
+
+    bash remote_laundromat/bin/remote_washer.sh
+
+Step 6 — Check remote outputs
+-----------------------------
+
+Run:
+
+    ls remote_laundromat/clean_laundry
+    bash scripts/check_remote_laundry.sh
+
+Reflection
+----------
+
+Open the Round 4 notes:
+
+    nano student_notes/round4_reflection.txt
+
+For this round, pay special attention to:
+Why does the remote computer need the files before it can process them?

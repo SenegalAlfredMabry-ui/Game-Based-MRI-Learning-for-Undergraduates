@@ -1,0 +1,22 @@
+Part 4 Mask Painting Reflection
+===============================
+
+Open this file after you finish Part 4:
+
+    nano student_notes/part4_masking_reflection.txt
+
+Answer before measuring masks.
+
+1. What did you paint?
+
+2. What value did you use for lesion-like marks?
+
+3. Why is it important to paint on the new mask and not on the FLAIR?
+
+4. Which region was easier to inspect: periventricular white matter or deep
+   white matter?
+
+5. What felt uncertain when deciding whether to paint a bright spot?
+
+6. What naming pattern did you use when saving your mask?
+

@@ -1,0 +1,51 @@
+Learning Remote Computing in a Virtual Laundromat: Part 0 - Before You Start
+=======================================
+
+Goal:
+Make sure you are in the correct folder before running any game commands.
+
+Step 1 - Enter the game folder
+------------------------------
+
+If the unzipped folder is on your Desktop, run:
+
+    cd ~/Desktop/Learning-Remote-Computing-in-a-Virtual-Laundromat
+
+If it is inside another folder, use cd to move into that folder instead.
+
+Step 2 - Check where you are
+----------------------------
+
+Run:
+
+    pwd
+    ls
+
+You should see folders like:
+
+    dirty_laundry
+    washer
+    clean_laundry
+    remote_laundromat
+    scripts
+    instructions
+
+Step 3 - Read the overview
+--------------------------
+
+Run:
+
+    cat README.txt
+    cat FAQ.txt
+
+Step 4 - Start Round 1
+----------------------
+
+Run:
+
+    cat instructions/Round_1_Local_Washer.txt
+
+Beginner rule:
+If something fails, do not guess first. Run pwd, then ls, then read the command
+again. Most early errors come from being in the wrong folder or misspelling a
+path.

@@ -1,0 +1,22 @@
+Round 4 Reflection - PI Laundromat
+==================================
+
+Open this after Round 4:
+
+    nano student_notes/round4_reflection.txt
+
+1. In the laundry analogy, why did the clothes need to go somewhere other than the home washer?
+
+
+2. In the research analogy, why might MRI work need a remote computer or server?
+
+
+3. What did fake_ssh.sh represent?
+
+
+4. What did fake_scp.sh represent?
+
+
+5. Why does the remote computer need the files before it can process them?
+
+

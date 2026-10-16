@@ -1,0 +1,63 @@
+Getting Hands-On with MRI #2: Lesion Identification in Parkinson’s Disease Research Through Brain Image Analysis Reflection Questions
+=====================================
+
+Use these questions for written notes or short video reflections. The goal is
+to make folder-finding, conversion, ITK-SNAP review, masking, and group
+comparison visible to the next beginner.
+
+Suggested notes files:
+
+    nano student_notes/part0_setup_reflection.txt
+    nano student_notes/part1_find_study_reflection.txt
+    nano student_notes/part2_conversion_reflection.txt
+    nano student_notes/part3_itksnap_reflection.txt
+    nano student_notes/part4_masking_reflection.txt
+    nano student_notes/part5_measure_compare_reflection.txt
+
+
+Setup checkpoint
+----------------
+
+1. What happened when you ran dcm2niix -h?
+
+2. What happened when you ran python3 --version?
+
+3. Did ITK-SNAP open as a regular app?
+
+4. What would you tell a future student to check before they start conversion?
+
+
+ITK-SNAP image review checkpoint
+--------------------------------
+
+1. What subject did you open first?
+
+2. What did the FLAIR help you see?
+
+3. What did the MPRAGE help you see?
+
+4. What display or contrast change made the image easier to inspect?
+
+
+Masking checkpoint
+------------------
+
+1. What subject did you mark first?
+
+2. What label value did you use for lesion-like regions?
+
+3. Where did you save the mask?
+
+4. What was one moment where you had to slow down?
+
+
+Analysis checkpoint
+-------------------
+
+1. What file did the measurement script create?
+
+2. Did any rows say MISSING, NA, or measurement_failed?
+
+3. What did the group comparison say?
+
+4. What would you check first if the group comparison did not make sense?

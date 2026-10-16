@@ -1,0 +1,86 @@
+Round 5 — Laundry Cluster Job
+=============================
+
+Goal
+----
+
+Submit a fake batch job, check the log, and inspect the outputs.
+
+What this teaches
+-----------------
+
+On a real cluster, you often do not run big jobs directly by clicking or typing one command.
+You submit a job to a scheduler.
+
+The scheduler runs the job and writes logs.
+
+In this game, scripts/submit_laundry_job.sh is a fake version of that idea.
+
+Dry-cleaner analogy:
+Imagine you bring a coat to a dry cleaner. The clerk does not clean it instantly
+while you stand there. They take the coat, put it in line behind other people's
+items, give you a receipt, and you come back later to check that the job is
+finished.
+
+Research analogy:
+A cluster works similarly. You submit a job instead of running it directly. The
+scheduler puts your job in line, runs it when resources are available, and writes
+a log. The log is like a receipt: it tells you what happened, when the job ran,
+and whether anything went wrong.
+
+In this round:
+
+    submit_laundry_job.sh = handing the coat to the dry cleaner
+    remote_laundromat/jobs = the line of submitted jobs
+    remote_laundromat/logs = the receipt or record of what happened
+    remote_laundromat/clean_laundry = the finished cleaned items
+
+Step 1 — Put files in the remote incoming folder
+------------------------------------------------
+
+Round 5 has its own input folder so it still works even after Round 4 has already
+processed the PI Laundromat files.
+
+Run this every time before submitting the job:
+
+    bash scripts/fake_scp.sh dirty_laundry/round5_cluster_job remote_laundromat/incoming
+
+Then check:
+
+    ls remote_laundromat/incoming
+
+Step 2 — Submit the fake job
+----------------------------
+
+Run:
+
+    bash scripts/submit_laundry_job.sh
+
+Step 3 — Check the logs
+-----------------------
+
+Run:
+
+    ls remote_laundromat/logs
+
+Then open the newest log with cat. For example:
+
+    cat remote_laundromat/logs/latest_job.log
+
+Step 4 — Check the clean remote laundry
+---------------------------------------
+
+Run:
+
+    ls remote_laundromat/clean_laundry
+    bash scripts/check_remote_laundry.sh
+
+Reflection
+----------
+
+Open the Round 5 notes:
+
+    nano student_notes/round5_reflection.txt
+
+For this round, pay special attention to:
+Why are logs useful after a job runs?

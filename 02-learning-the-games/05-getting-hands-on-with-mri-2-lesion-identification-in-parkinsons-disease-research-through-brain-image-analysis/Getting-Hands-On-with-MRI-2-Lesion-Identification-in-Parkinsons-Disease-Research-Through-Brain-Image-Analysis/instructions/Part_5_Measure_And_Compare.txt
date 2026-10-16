@@ -1,0 +1,158 @@
+Part B, Step 2 - Measure and Compare Lesion Masks
+=================================================
+
+Goal
+----
+
+Measure the masks you saved from ITK-SNAP and compare the PD and control groups.
+
+This part turns a visual annotation into a simple spreadsheet-like result.
+
+
+Before you measure
+------------------
+
+The measurement script expects one mask per subject in:
+
+    lesion_masks
+
+Each mask should follow this pattern:
+
+    lesion_ROI_INITIALS_SUBJECT.nii.gz
+
+Example:
+
+    lesion_masks/lesion_ROI_SAM_sub-PD01.nii.gz
+
+The masks should be NIfTI files. Lesion voxels should have value 1. Background
+voxels should have value 0.
+
+If you did not mark any lesion-like hyperintensities for a control subject,
+that is allowed. The saved mask should still exist, and the measurement should
+come out as 0 label-1 voxels. A true 0 is a valid result, not an error.
+
+Pause question:
+    Why does the script need the same filename pattern for every subject?
+
+
+Step 1 - Check your masks
+-------------------------
+
+Use the commands you already know to inspect the folder.
+
+Look for six masks, one for each subject:
+
+    sub-PD01
+    sub-PD02
+    sub-PD03
+    sub-CON01
+    sub-CON02
+    sub-CON03
+
+If you only have one or two masks, the script can still run, but the group
+comparison will be incomplete.
+
+
+Step 2 - Measure label 1 voxels
+-------------------------------
+
+Run:
+
+    bash scripts/measure_lesion_masks.sh
+
+When prompted, enter the initials you used in the mask filenames.
+
+If you are not sure which initials were used, press Enter. The script will try
+to auto-detect a NIfTI mask file for each subject.
+
+The script uses:
+
+    python3 scripts/measure_nifti_label1.py
+
+It reads each NIfTI mask directly and counts voxels with value 1.
+
+The output file is:
+
+    results/lesion_voxel_counts.csv
+
+
+Step 3 - Read the measurement file
+----------------------------------
+
+Open the CSV:
+
+    cat results/lesion_voxel_counts.csv
+
+Look at these columns:
+
+    subject
+    group
+    mask_file
+    label_1_voxels
+    label_1_volume_mm3
+    measurement_method
+    status
+
+Pause question:
+    Which column tells you how many voxels were marked as lesion-like?
+
+If a control subject has a valid mask with no marks, the label_1_voxels column
+should say 0. That means the script measured the mask and found no label-1
+voxels.
+
+
+Step 4 - Compare groups
+-----------------------
+
+Run:
+
+    bash scripts/compare_groups.sh
+
+Then read:
+
+    cat results/group_comparison.txt
+
+This is a small teaching comparison, not a clinical or statistical conclusion.
+
+
+If the analysis sheet does not work
+-----------------------------------
+
+Check these common problems:
+
+1. Missing masks
+
+   If the CSV says MISSING, the filename or folder location does not match what
+   the script expects.
+
+2. Wrong initials
+
+   If you saved lesion_ROI_SAM_sub-PD01.nii.gz but typed different initials at
+   the prompt, the script will look for the wrong files.
+
+3. Wrong file type
+
+   If the CSV says measurement_failed, check that the mask ends in .nii or
+   .nii.gz and was exported as NIfTI from ITK-SNAP.
+
+4. Wrong label value
+
+   If the script runs but counts 0 voxels, reopen the mask in ITK-SNAP and
+   check whether the painted region uses label value 1. If you intentionally
+   did not paint anything for that subject, 0 is the correct result.
+
+5. Not enough subjects measured
+
+   If group_comparison.txt says there are 0 measured subjects, open
+   results/lesion_voxel_counts.csv and look for MISSING, NA, or
+   measurement_failed rows.
+
+
+Step 5 - Reflection
+-------------------
+
+Open:
+
+    nano student_notes/part5_measure_compare_reflection.txt
+
+Answer the questions while the output is still fresh.

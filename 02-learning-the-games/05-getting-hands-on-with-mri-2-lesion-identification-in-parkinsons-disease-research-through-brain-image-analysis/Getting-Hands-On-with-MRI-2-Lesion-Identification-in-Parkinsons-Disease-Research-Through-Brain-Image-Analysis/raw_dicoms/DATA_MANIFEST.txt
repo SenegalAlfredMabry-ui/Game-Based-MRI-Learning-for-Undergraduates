@@ -1,0 +1,67 @@
+Lesson 5 DICOM Data Manifest
+============================
+
+Each teaching subject starts with two DICOM ZIP files:
+
+    MPRAGE_DICOM.zip
+    FLAIR_DICOM.zip
+
+Students unpack them with:
+
+    bash scripts/unpack_dicoms.sh
+
+After unpacking, each teaching subject has two DICOM folders:
+
+    MPRAGE_DICOM
+    FLAIR_DICOM
+
+Expected file counts:
+
+    MPRAGE_DICOM: 200 DICOM files
+    FLAIR_DICOM: 44 DICOM files
+
+Subject mapping
+---------------
+
+sub-PD01
+    Group: PD / patient
+    Source ZIP: lesion game patients/100412.zip
+    MPRAGE scan: 2-SAG_3D__MPRage_0_8
+    FLAIR scan: 3-Ax_T2_FLAIR
+
+sub-PD02
+    Group: PD / patient
+    Source ZIP: lesion game patients/100471.zip
+    MPRAGE scan: 2-SAG_3D__MPRage_0_8
+    FLAIR scan: 3-Ax_T2_FLAIR
+
+sub-PD03
+    Group: PD / patient
+    Source ZIPs: Getting Hands-On with MRI #1: Converting DICOM to NIfTI raw_dicoms_zipped/MPRAGE_DICOM.zip and FLAIR_DICOM.zip
+    MPRAGE scan: DICOM folder from MPRAGE_DICOM.zip
+    FLAIR scan: DICOM folder from FLAIR_DICOM.zip
+
+sub-CON01
+    Group: control
+    Source ZIP: lesion game controls/100382.zip
+    MPRAGE scan: 3-SAG_3D__MPRage_0_8
+    FLAIR scan: 4-Ax_T2_FLAIR
+
+sub-CON02
+    Group: control
+    Source ZIP: lesion game controls/100399.zip
+    MPRAGE scan: 3-SAG_3D__MPRage_0_8
+    FLAIR scan: 4-Ax_T2_FLAIR
+
+sub-CON03
+    Group: control
+    Source ZIP: lesion game controls/100741.zip
+    MPRAGE scan: 4-SAG_3D__MPRage_0_8
+    FLAIR scan: 5-Ax_T2_FLAIR
+
+Teaching note
+-------------
+
+The ZIP files contain raw DICOM files. Students need to unpack the scan ZIPs,
+then run the DICOM-to-NIfTI conversion step before opening the images as NIfTI
+files in ITK-SNAP.

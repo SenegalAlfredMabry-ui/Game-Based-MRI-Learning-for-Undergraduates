@@ -1,0 +1,82 @@
+# Getting Hands-On with MRI #1: Converting DICOM to NIfTI - Student Reflection Notes
+
+Use this file as you move through the game. The questions are placed inside the
+instructions at the moment they matter.
+
+Open this file with nano when the instructions ask you to write a checkpoint.
+
+---
+
+# Part 1 - Packages, MRIcron GUI Conversion, and Image Review
+
+1. What happened when you ran dcm2niix -h? If it failed, what fixed it?
+
+
+2. Did MRIcron open successfully?
+
+
+3. What command showed you that you were in the correct game folder?
+
+
+4. Does one MRI scan look like one file or many files before conversion?
+
+
+5. Why is it useful to keep GUI outputs in their own folder?
+
+
+6. What command confirmed the MPRAGE output was in gui_niftis?
+
+
+7. Why should MPRAGE and FLAIR become two separate NIfTI images?
+
+
+8. What does MPRAGE make easiest to see?
+
+
+9. What changed when you adjusted the FLAIR contrast? What setting felt useful?
+
+
+10. What is easier to understand with the overlay than with either scan alone?
+
+
+11. Why might clicking through MRIcron become difficult with many subjects?
+
+
+---
+
+# Part 2 - Command Line and Scripted Conversion
+
+1. Why are we using script_niftis instead of gui_niftis?
+
+
+2. What command did you use to open the script?
+
+
+3. Why might it be useful for a script to stop when a command fails?
+
+
+4. If the next subject were sub-002, which variable would you change first?
+
+
+5. Why should the script check for dcm2niix before converting?
+
+
+6. In the MPRAGE command, which part names the output file?
+
+
+7. In the MPRAGE command, which part chooses the input DICOM folder?
+
+
+8. What changed between the MPRAGE command and the FLAIR command?
+
+
+9. Did the script create the four expected files? If not, what did the check script say?
+
+
+10. Did the scripted images look like the GUI-converted images from Part 1?
+
+
+11. Why are we doing the conversion with code after already doing it with MRIcron?
+
+
+12. What part of this workflow feels like something you could do again, and what part would you still want help with?

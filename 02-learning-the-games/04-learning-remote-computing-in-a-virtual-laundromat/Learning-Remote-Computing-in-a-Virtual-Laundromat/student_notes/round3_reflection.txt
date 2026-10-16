@@ -1,0 +1,22 @@
+Round 3 Reflection - Robot Washer Loop
+======================================
+
+Open this after Round 3:
+
+    nano student_notes/round3_reflection.txt
+
+1. What did the loop help automate?
+
+
+2. How did the loop change the amount of typing you had to do?
+
+
+3. What part of the robot script told Bash which files to move?
+
+
+4. How is a loop useful for research folders with many subjects or scans?
+
+
+5. What would you check first if the robot script moved no files?
+
+

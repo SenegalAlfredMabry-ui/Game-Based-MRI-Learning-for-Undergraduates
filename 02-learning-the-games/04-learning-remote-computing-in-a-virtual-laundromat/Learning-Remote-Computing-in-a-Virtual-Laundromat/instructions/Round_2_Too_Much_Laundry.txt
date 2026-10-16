@@ -1,0 +1,103 @@
+Round 2 - Too Much Laundry
+==========================
+
+Goal
+----
+
+Work with more dirty items and notice why doing everything one file at a time
+becomes annoying.
+
+What this teaches
+-----------------
+
+When there are only three files, manual movement is okay. When there are many
+files, manual movement starts to feel repetitive.
+
+That is the moment where scripting and pattern matching begin to make sense.
+
+Step 1 - Look at the bigger load
+--------------------------------
+
+List the files in:
+
+    dirty_laundry/round2_big_load
+
+Before moving anything, count how many dirty PNG files you see.
+
+Question:
+
+    Would you want to type one mv command for every file in this folder?
+
+Step 2 - Move a few by hand
+---------------------------
+
+Use mv to move two dirty files into:
+
+    washer
+
+Choose any two files from:
+
+    dirty_laundry/round2_big_load
+
+Then check the washer folder.
+
+Pause here. This should work, but it should also start to feel inefficient.
+
+Step 3 - Use a wildcard for the rest
+------------------------------------
+
+A wildcard lets one command match many files.
+
+The star symbol means:
+
+    match whatever characters are in this part of the filename
+
+In this round, you want to match every file ending in:
+
+    _dirty.png
+
+Build a move command that uses:
+
+    mv
+    dirty_laundry/round2_big_load
+    *_dirty.png
+    washer
+
+In plain language, your command should mean:
+
+    move every file from round2_big_load that ends in _dirty.png into washer
+
+If you are stuck, read:
+
+    cat instructions/stuck_instructions/Round_2_Too_Much_Laundry_STUCK.txt
+
+Step 4 - Wash the load
+----------------------
+
+Run the local washer script again.
+
+Before running it, ask:
+
+    Which folder should contain the dirty inputs?
+    Which folder should receive the clean outputs?
+
+Step 5 - Check the outputs
+--------------------------
+
+Inspect:
+
+    clean_laundry
+
+Then run the local laundry checker.
+
+Reflection
+----------
+
+Open the Round 2 notes:
+
+    nano student_notes/round2_reflection.txt
+
+For this round, pay special attention to:
+
+    What became annoying to do manually?
+

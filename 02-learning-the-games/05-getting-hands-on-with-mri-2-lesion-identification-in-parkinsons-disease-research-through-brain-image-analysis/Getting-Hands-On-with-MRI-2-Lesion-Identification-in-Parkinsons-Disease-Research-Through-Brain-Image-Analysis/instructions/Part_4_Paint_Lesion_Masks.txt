@@ -1,0 +1,187 @@
+Part B, Step 1 - Paint Lesion Masks in ITK-SNAP
+===============================================
+
+Goal
+----
+
+Create one lesion mask for each subject using ITK-SNAP.
+
+The analysis script expects:
+
+    background voxels = 0
+    lesion voxels = 1
+    file type = NIfTI
+    filename pattern = lesion_ROI_INITIALS_SUBJECT.nii.gz
+
+Example:
+
+    lesion_masks/lesion_ROI_SAM_sub-PD01.nii.gz
+
+
+Before you paint
+----------------
+
+Use old habits before opening the viewer:
+
+    Where am I?
+    What subject am I working on?
+    Do I have both FLAIR and MPRAGE converted?
+    Where should the final mask be saved?
+
+Pause question:
+    Which folder should contain the final saved masks?
+
+
+Step 1 - Choose one subject
+---------------------------
+
+Start with one subject before trying all six.
+
+Recommended first subject:
+
+    sub-PD01
+
+Find that subject's converted files:
+
+    converted_niftis/sub-PD01/sub-PD01_FLAIR.nii.gz
+    converted_niftis/sub-PD01/sub-PD01_MPRAGE.nii.gz
+
+
+Step 2 - Load the FLAIR in ITK-SNAP
+-----------------------------------
+
+Open ITK-SNAP and load the FLAIR as the main image.
+
+Use the FLAIR for marking because lesion-like hyperintensities are often easier
+to see there than on the MPRAGE.
+
+Adjust the FLAIR display/contrast until bright regions are visible but the
+whole brain is not washed out.
+
+Pause question:
+    What contrast setting made the FLAIR easiest to inspect?
+
+
+Step 3 - Use the MPRAGE as an anatomy check
+-------------------------------------------
+
+Open or compare the MPRAGE for the same subject.
+
+The MPRAGE helps you orient yourself. It is not the main image for marking in
+this game, but it can help you decide whether a bright FLAIR region is in a
+plausible brain location.
+
+
+Step 4 - Create a new segmentation/mask
+---------------------------------------
+
+In ITK-SNAP, create a new segmentation or mask for the subject.
+
+Important:
+
+    Use label value 1 for lesion-like regions.
+    Leave the background as 0.
+
+Do not paint directly on the original FLAIR or MPRAGE image. You are creating a
+separate mask file.
+
+
+Step 5 - Paint carefully
+------------------------
+
+Use a small brush at first. Move through nearby slices and mark the bright
+lesion-like area only where you can still see it.
+
+For this teaching game, you are practicing careful annotation. You are not
+making a clinical diagnosis.
+
+Pause question:
+    What rule did you use to decide where to mark and where to stop marking?
+
+
+Step 6 - Save the mask with the exact name
+------------------------------------------
+
+Save or export the segmentation as a NIfTI file in:
+
+    lesion_masks
+
+Use this filename pattern:
+
+    lesion_ROI_INITIALS_SUBJECT.nii.gz
+
+Example:
+
+    lesion_masks/lesion_ROI_SAM_sub-PD01.nii.gz
+
+Repeat for all six subjects:
+
+    sub-PD01
+    sub-PD02
+    sub-PD03
+    sub-CON01
+    sub-CON02
+    sub-CON03
+
+
+If ITK-SNAP saves the wrong file type
+-------------------------------------
+
+Some versions or menu paths may try to save a segmentation as another format.
+For this game, the final mask should be a NIfTI file ending in:
+
+    .nii
+    .nii.gz
+
+If you see an output like .seg.nrrd or a file without .nii/.nii.gz, look for
+Save As, Export, or Save Segmentation options that allow NIfTI output.
+
+
+If you can open ITK-SNAP but cannot make a mark
+-----------------------------------------------
+
+Check these in order:
+
+1. Is the segmentation/mask layer active?
+
+2. Did you create a new segmentation instead of only opening the FLAIR?
+
+3. Is label 1 selected as the active drawing label?
+
+4. Are you using the paintbrush or manual segmentation tool instead of the
+   navigation/crosshair tool?
+
+5. Is your brush size too large or too small? Start with brush size 1 or 2.
+
+6. Is the mask opacity too low to see? Increase the label opacity or change the
+   label color.
+
+7. Are you clicking inside the image slice view, not on a toolbar or side panel?
+
+8. Try drawing one tiny test mark, save the mask, reopen it, and confirm the
+   mark is still there.
+
+9. If nothing works, create a fresh blank segmentation and try again with only
+   one subject open.
+
+If you ask for help, bring:
+
+    the subject ID
+    a screenshot of ITK-SNAP
+    the exact filename you are trying to save
+    what happens when you try to paint
+
+
+Step 7 - Record your marking notes
+----------------------------------
+
+Open:
+
+    nano student_notes/lesion_marking_notes.csv
+
+For each subject, write a short note about what you marked and how confident
+you felt.
+
+Then answer:
+
+    nano student_notes/part4_masking_reflection.txt

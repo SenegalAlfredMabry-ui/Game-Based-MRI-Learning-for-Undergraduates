@@ -1,0 +1,96 @@
+Round 3 - Robot Washer Loop
+===========================
+
+Goal
+----
+
+Use a loop script to move many dirty files automatically.
+
+What this teaches
+-----------------
+
+A loop lets the computer repeat a task for every file.
+
+Instead of typing mv over and over, we can tell Bash:
+
+    for every dirty file
+        move it into the washer
+
+This round builds from the Learning Bash Scripting by Sorting a Wine Shed. You are using a script because the same
+action needs to happen repeatedly.
+
+Step 1 - Look at the loop challenge
+-----------------------------------
+
+List the files in:
+
+    dirty_laundry/round3_loop_challenge
+
+Question:
+
+    What do the filenames have in common?
+
+Step 2 - Read the robot script
+------------------------------
+
+Open:
+
+    scripts/robot_move_to_washer.sh
+
+Use nano to read the comments and find the loop.
+
+Look for:
+
+    the variable that stores the input folder
+    the pattern that finds dirty PNG files
+    the mv command inside the loop
+
+You do not need to rewrite the whole script. Your job is to understand what it
+is doing before you run it.
+
+Step 3 - Run the robot script
+-----------------------------
+
+The robot script needs one argument: the folder that contains the dirty files.
+
+Build the command from these pieces:
+
+    bash
+    scripts/robot_move_to_washer.sh
+    dirty_laundry/round3_loop_challenge
+
+If you run the script without the folder argument, read the usage message and
+try again.
+
+If you are stuck, read:
+
+    cat instructions/stuck_instructions/Round_3_Robot_Washer_Loop_STUCK.txt
+
+Step 4 - Wash the moved files
+-----------------------------
+
+Run the local washer script.
+
+Before checking outputs, predict:
+
+    Which folder should be empty or smaller now?
+    Which folder should have new clean files?
+
+Step 5 - Check outputs
+----------------------
+
+Inspect the clean laundry folder.
+
+Then run the local laundry checker.
+
+Reflection
+----------
+
+Open the Round 3 notes:
+
+    nano student_notes/round3_reflection.txt
+
+For this round, pay special attention to:
+
+    How did the loop change the amount of typing you had to do?
+

@@ -1,0 +1,35 @@
+name: Lesson feedback
+description: Report a problem or suggest an improvement.
+title: "[Feedback] "
+body:
+  - type: dropdown
+    id: lesson
+    attributes:
+      label: Lesson or section
+      options:
+        - "Lesson 1: Learning Unix Basics in a Virtual House"
+        - "Lesson 2: Learning Bash Scripting by Sorting a Wine Shed"
+        - "Lesson 3: Getting Hands-On with MRI #1: Converting DICOM to NIfTI"
+        - "Lesson 4: Learning Remote Computing in a Virtual Laundromat"
+        - "Lesson 5: Getting Hands-On with MRI #2: Lesion Identification in Parkinson’s Disease Research Through Brain Image Analysis"
+        - General project feedback
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Describe what happened, what you expected, and any steps or commands needed to reproduce it. Use text only and remove private information.
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: Computer and software versions (optional)
+  - type: checkboxes
+    id: visibility
+    attributes:
+      label: Visibility
+      options:
+        - label: I understand that this report and my GitHub username will be visible when the repository is public. I have removed private information.
+          required: true

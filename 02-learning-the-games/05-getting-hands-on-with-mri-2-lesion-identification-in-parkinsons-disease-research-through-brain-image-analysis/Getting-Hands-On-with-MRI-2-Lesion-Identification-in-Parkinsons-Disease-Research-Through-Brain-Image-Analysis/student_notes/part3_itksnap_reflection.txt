@@ -1,0 +1,27 @@
+Part 3 ITK-SNAP Review Reflection
+=================================
+
+Answer after opening and comparing FLAIR and MPRAGE in ITK-SNAP.
+
+Open this file with:
+
+    nano student_notes/part3_itksnap_reflection.txt
+
+1. What subject did you open first?
+
+
+2. What did you notice on the FLAIR image?
+
+
+3. What did the MPRAGE help you understand about the brain anatomy?
+
+
+4. What contrast or display adjustment made the FLAIR easier to review?
+
+
+5. What was confusing about loading, comparing, or moving through the images in
+   ITK-SNAP?
+
+
+6. What would you show a future student before they start drawing masks?
+

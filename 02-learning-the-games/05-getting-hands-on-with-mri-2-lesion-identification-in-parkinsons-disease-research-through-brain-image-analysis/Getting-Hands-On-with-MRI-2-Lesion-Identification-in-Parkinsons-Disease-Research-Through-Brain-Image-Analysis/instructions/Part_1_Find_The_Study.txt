@@ -1,0 +1,102 @@
+Part A, Step 1 — Find the Study
+===============================
+
+Goal
+----
+
+Use the command line skills from the Learning Unix Basics in a Virtual House to find your data and understand the folder structure.
+
+This part is mostly Learning Unix Basics in a Virtual House knowledge in a real MRI folder: use pwd to check
+where you are, ls to inspect folders, and cat to read small text files before
+running anything.
+
+Step 1 — Check where you are
+----------------------------
+
+Run:
+
+    pwd
+    ls
+
+You should see:
+
+    README.txt
+    FAQ.txt
+    subject_groups.csv
+    raw_dicoms
+    converted_niftis
+    lesion_masks
+    results
+    scripts
+    instructions
+    student_notes
+
+You may also see an instructor_notes folder. That one is for your instructor.
+
+Step 2 — Read the instructions
+------------------------------
+
+Run:
+
+    cat README.txt
+    cat FAQ.txt
+    cat SOFTWARE_SETUP.txt
+
+Step 3 — Look at the subject list
+---------------------------------
+
+Run:
+
+    cat subject_groups.csv
+
+You should see three PD subjects and three control subjects.
+
+Step 4 — Look inside the raw DICOM folders
+------------------------------------------
+
+Run:
+
+    ls raw_dicoms
+    ls raw_dicoms/sub-PD01
+
+You should see zipped scan files:
+
+    MPRAGE_DICOM.zip
+    FLAIR_DICOM.zip
+
+The DICOMs are zipped so the game is easier to download and so the raw data
+does not appear as hundreds of loose files before you need it.
+
+Before conversion, unpack the scan ZIPs:
+
+    bash scripts/unpack_dicoms.sh
+
+Now look inside the unpacked folders:
+
+    ls raw_dicoms/sub-PD01/MPRAGE_DICOM
+    ls raw_dicoms/sub-PD01/FLAIR_DICOM
+
+You should see many files ending in .dcm inside each scan folder.
+
+Expected counts:
+
+    MPRAGE_DICOM: 200 DICOM files
+    FLAIR_DICOM: 44 DICOM files
+
+If you only see a small number of files after unpacking, stop and ask your
+instructor for a fresh copy of the game ZIP.
+
+Reflection checkpoint
+---------------------
+
+Open:
+
+    nano student_notes/part1_find_study_reflection.txt
+
+Answer these before moving to conversion.
+
+1. Where are the raw DICOM folders?
+2. Where will the converted NIfTI files go?
+3. Where will the lesion masks be saved?
+4. Which subjects are PD and which subjects are controls?
+5. Why does finding the correct folder matter before running an analysis?

@@ -1,0 +1,22 @@
+Round 2 Reflection - Too Much Laundry
+=====================================
+
+Open this after Round 2:
+
+    nano student_notes/round2_reflection.txt
+
+1. What became annoying to do manually?
+
+
+2. What did the wildcard pattern *_dirty.png select?
+
+
+3. Why was one wildcard command easier than many separate mv commands?
+
+
+4. What kind of MRI or lab task might involve many files with similar names?
+
+
+5. What would you check first if a wildcard moved nothing?
+
+

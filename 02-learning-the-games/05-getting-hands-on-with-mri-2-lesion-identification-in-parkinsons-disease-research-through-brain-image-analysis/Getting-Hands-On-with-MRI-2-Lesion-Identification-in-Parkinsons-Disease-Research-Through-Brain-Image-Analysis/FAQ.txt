@@ -1,0 +1,245 @@
+Lesson 5 FAQ: Getting Hands-On with MRI #2: Lesion Identification in Parkinson's Disease Research Through Brain Image Analysis
+==============================================================================================================================
+
+What is the goal of this game?
+------------------------------
+
+This is the capstone game. It brings together command line navigation, script
+editing, DICOM-to-NIfTI conversion, ITK-SNAP image inspection, manual lesion
+masking, and group comparison.
+
+The main goal is not to diagnose anyone. The goal is to practice a realistic
+beginner MRI workflow from folders to converted images to a small result.
+
+
+What software do I need?
+------------------------
+
+You need only:
+
+    dcm2niix
+    ITK-SNAP
+    python3
+
+Read:
+
+    cat SOFTWARE_SETUP.txt
+
+
+What should I do first?
+-----------------------
+
+Start in the main game folder and run:
+
+    pwd
+    ls
+    cat README.txt
+    cat SOFTWARE_SETUP.txt
+    cat instructions/Part_0_Before_You_Start.txt
+
+Then move through the numbered instruction files in order.
+
+
+Why are the DICOMs zipped?
+--------------------------
+
+DICOM folders can contain many files. Keeping each scan zipped makes the game
+easier to download and keeps the folder cleaner before you are ready to work.
+
+Before conversion, run:
+
+    bash scripts/unpack_dicoms.sh
+
+
+What is Part A?
+---------------
+
+Part A gets you from folders to viewable brain images.
+
+It includes:
+
+    setup
+    finding the study folders
+    converting DICOM to NIfTI
+    opening FLAIR and MPRAGE in ITK-SNAP
+
+Stop after Part A if students are still having tool, conversion, or viewer
+problems.
+
+
+What is Part B?
+---------------
+
+Part B gets you from image inspection to a small analysis.
+
+It includes:
+
+    painting lesion-like hyperintensities
+    saving NIfTI lesion masks
+    measuring label 1 voxels
+    comparing PD and control groups
+
+
+What does FLAIR show?
+---------------------
+
+FLAIR is useful for this game because many lesion-like white matter
+hyperintensities can appear bright after fluid signal is suppressed.
+
+When reviewing FLAIR, adjust the contrast so bright regions are visible without
+making the whole brain look bright.
+
+
+What does MPRAGE show?
+----------------------
+
+MPRAGE is a structural/anatomical image. It helps you orient yourself and check
+where a bright FLAIR region is located.
+
+In this game, FLAIR is the main image for marking. MPRAGE is the anatomy check.
+
+
+How do I use ITK-SNAP for this game?
+------------------------------------
+
+Open ITK-SNAP as a regular app.
+
+For each subject:
+
+1. Load the FLAIR as the main image.
+2. Review the FLAIR contrast.
+3. Open or compare the MPRAGE as the anatomy reference.
+4. Create a new segmentation/mask.
+5. Use label value 1 for lesion-like regions.
+6. Leave background as 0.
+7. Save or export the mask as NIfTI in the lesion_masks folder.
+
+The required filename pattern is:
+
+    lesion_ROI_INITIALS_SUBJECT.nii.gz
+
+Example:
+
+    lesion_masks/lesion_ROI_SAM_sub-PD01.nii.gz
+
+
+What if ITK-SNAP opens but I cannot paint?
+------------------------------------------
+
+Check these in order:
+
+1. Did you create a new segmentation or mask?
+2. Is the segmentation/mask layer active?
+3. Is label 1 selected?
+4. Are you using the paintbrush/manual segmentation tool?
+5. Is the brush size reasonable? Start with 1 or 2.
+6. Is mask opacity too low to see?
+7. Are you clicking inside the image slice view?
+8. Can you make one tiny test mark and save it?
+9. Can you reopen the saved mask and see the test mark?
+
+If the answer is still no, restart ITK-SNAP with only one subject open and make
+a fresh blank segmentation.
+
+
+Why did dcm2niix say "Problem reading ECAT7" or "Missing images"?
+-----------------------------------------------------------------
+
+Those messages usually mean dcm2niix was pointed at the wrong folder or the
+DICOM folders were not unpacked cleanly.
+
+For this game, dcm2niix should receive one scan-specific folder at a time:
+
+    raw_dicoms/sub-PD01/MPRAGE_DICOM
+    raw_dicoms/sub-PD01/FLAIR_DICOM
+
+It should not receive the whole subject folder or the whole raw_dicoms folder.
+Those folders contain ZIP files and multiple scan types, which can confuse the
+conversion.
+
+If this happens:
+
+1. Stop before opening ITK-SNAP.
+2. Run:
+
+       bash scripts/unpack_dicoms.sh
+
+3. Reopen the conversion script and check the input folder.
+4. Rerun:
+
+       bash scripts/convert_all_subjects_TEMPLATE.sh
+
+5. Check:
+
+       bash scripts/check_conversions.sh
+
+The updated conversion script also saves logs in:
+
+    results/conversion_logs
+
+If the log contains `Missing images`, `Unable to find any DICOM images`,
+`Problem reading ECAT7 file`, or `Check sorted order`, the conversion should be
+treated as failed even if a final line says the script finished.
+
+
+Why did the analysis sheet not work?
+------------------------------------
+
+The measurement step needs masks that match the script's expectations.
+
+Check:
+
+    Are the masks in lesion_masks?
+    Did you use the same initials when saving and measuring?
+    Does each mask end in .nii or .nii.gz?
+    Did ITK-SNAP save a NIfTI mask, not another segmentation format?
+    Are the marked voxels label value 1?
+
+Then read:
+
+    cat results/lesion_voxel_counts.csv
+
+If rows say MISSING, the script could not find the expected mask filename.
+
+If rows say measurement_failed, the file was found but could not be read as the
+expected NIfTI mask.
+
+If rows say 0 voxels, the mask may have been saved but the painted label may
+not be value 1. However, 0 is also the correct result for a valid subject mask
+where you intentionally did not mark any lesion-like hyperintensities. This can
+happen for control subjects.
+
+The important difference is:
+
+    0 means the mask was measured and no label-1 voxels were found.
+    MISSING means the mask file was not found.
+    measurement_failed means the file could not be read as expected.
+
+
+Where should I look when something breaks?
+------------------------------------------
+
+Use this order:
+
+1. Read the current instruction file again.
+2. Read FAQ.txt.
+3. Read SOFTWARE_SETUP.txt for tool problems.
+4. Check where you are with pwd.
+5. List the folder with ls.
+6. Check filenames carefully.
+7. Open the matching reflection file and write what happened.
+
+
+What should I record in the student video?
+------------------------------------------
+
+Show the process, not only the final answer.
+
+A useful short recording might show:
+
+    the folder you are in
+    the command or menu you tried
+    the output or image you saw
+    where you got stuck
+    what you checked next
+    what you would tell the next student

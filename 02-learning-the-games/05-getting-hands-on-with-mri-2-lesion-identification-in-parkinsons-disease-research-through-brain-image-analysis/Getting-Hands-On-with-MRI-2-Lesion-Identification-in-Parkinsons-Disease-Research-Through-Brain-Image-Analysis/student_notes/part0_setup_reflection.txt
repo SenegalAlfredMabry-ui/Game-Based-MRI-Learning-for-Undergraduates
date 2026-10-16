@@ -1,0 +1,23 @@
+Part 0 Setup Reflection
+=======================
+
+Answer after reading SOFTWARE_SETUP.txt and checking the tools.
+
+1. What happened when you ran dcm2niix -h?
+
+
+2. If dcm2niix did not work at first, what did Terminal say?
+
+
+3. What happened when you ran python3 --version?
+
+
+4. Did ITK-SNAP open as a regular app?
+
+
+5. If ITK-SNAP did not open at first, what did your computer show you?
+
+
+6. What would you check first if a future student said, "I installed the
+   software, but the game still cannot find my files"?
+

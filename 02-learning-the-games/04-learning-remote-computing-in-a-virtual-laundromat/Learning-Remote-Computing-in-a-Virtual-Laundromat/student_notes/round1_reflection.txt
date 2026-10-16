@@ -1,0 +1,22 @@
+Round 1 Reflection - Local Washer
+=================================
+
+Open this after Round 1:
+
+    nano student_notes/round1_reflection.txt
+
+1. What did Round 1 teach you how to do?
+
+
+2. What did the dirty images look like before washing?
+
+
+3. What command or folder felt most important in this round?
+
+
+4. What changed after you ran the local washer script?
+
+
+5. How does this input -> process -> output pattern connect to MRI work?
+
+

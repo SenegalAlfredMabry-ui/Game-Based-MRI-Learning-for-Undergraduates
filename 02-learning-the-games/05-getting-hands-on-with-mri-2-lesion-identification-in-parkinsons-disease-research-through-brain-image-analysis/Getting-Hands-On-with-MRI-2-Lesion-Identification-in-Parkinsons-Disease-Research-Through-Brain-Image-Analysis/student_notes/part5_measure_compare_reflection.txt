@@ -1,0 +1,21 @@
+Part 5 Measure and Compare Reflection
+=====================================
+
+Open this file after you finish Part 5:
+
+    nano student_notes/part5_measure_compare_reflection.txt
+
+Answer after reading the group comparison.
+
+1. Which group had more marked lesion-like hyperintensity voxels?
+
+2. Was the result what you expected?
+
+3. Why does the script need consistent mask names?
+
+4. Why does the script need mask values to be 0 and 1?
+
+5. How does this connect to a real neuroimaging research question?
+
+6. What would you check first if the results file looked empty or wrong?
+

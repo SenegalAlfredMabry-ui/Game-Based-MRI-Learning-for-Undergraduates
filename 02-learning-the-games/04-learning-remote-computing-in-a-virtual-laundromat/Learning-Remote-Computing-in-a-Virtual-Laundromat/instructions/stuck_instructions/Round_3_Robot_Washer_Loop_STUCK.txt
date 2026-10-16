@@ -1,0 +1,71 @@
+Round 3 — Robot Washer Loop
+===========================
+
+Goal
+----
+
+Use a loop script to move many dirty files automatically.
+
+What this teaches
+-----------------
+
+A loop lets the computer repeat a task for every file.
+
+Instead of typing mv over and over, we can tell Bash:
+
+    for every dirty file
+        move it into the washer
+
+Step 1 — Look at the loop challenge
+-----------------------------------
+
+Run:
+
+    ls dirty_laundry/round3_loop_challenge
+
+Step 2 — Open the robot script
+------------------------------
+
+Run:
+
+    nano scripts/robot_move_to_washer.sh
+
+Read the comments. Look for the for loop.
+
+Then save and exit:
+
+    Ctrl + O
+    Enter
+    Ctrl + X
+
+Step 3 — Run the robot script
+-----------------------------
+
+Run:
+
+    bash scripts/robot_move_to_washer.sh dirty_laundry/round3_loop_challenge
+
+Step 4 — Wash the moved files
+-----------------------------
+
+Run:
+
+    bash scripts/local_washer.sh
+
+Step 5 — Check outputs
+----------------------
+
+Run:
+
+    ls clean_laundry
+    bash scripts/check_local_laundry.sh
+
+Reflection
+----------
+
+Open the Round 3 notes:
+
+    nano student_notes/round3_reflection.txt
+
+For this round, pay special attention to:
+How did the loop change the amount of typing you had to do?

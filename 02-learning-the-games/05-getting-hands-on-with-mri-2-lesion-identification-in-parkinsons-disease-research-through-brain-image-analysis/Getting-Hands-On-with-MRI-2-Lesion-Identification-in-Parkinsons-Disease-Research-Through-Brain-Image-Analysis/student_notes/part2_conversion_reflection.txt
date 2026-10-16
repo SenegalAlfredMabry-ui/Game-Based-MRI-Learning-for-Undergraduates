@@ -1,0 +1,21 @@
+Part 2 Conversion Script Reflection
+===================================
+
+Open this file after you finish Part 2:
+
+    nano student_notes/part2_conversion_reflection.txt
+
+Answer while the conversion script is still fresh.
+
+1. What did the conversion script do?
+
+2. Why did we convert both MPRAGE and FLAIR?
+
+3. What files did dcm2niix create?
+
+4. Why is a script useful after you understand the manual conversion goal?
+
+5. What part of the script would you check first if no NIfTI files appeared?
+
+6. Where should the converted files be saved?
+

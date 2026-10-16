@@ -1,0 +1,152 @@
+Lesson 5 Instructor Notes: Getting Hands-On with MRI #2: Lesion Identification in Parkinson's Disease Research Through Brain Image Analysis
+===========================================================================================================================================
+
+Current software stack
+----------------------
+
+This version uses:
+
+    dcm2niix
+    ITK-SNAP
+    python3
+
+
+Teaching goals
+--------------
+
+Students should practice:
+
+- checking folder structure before running commands
+- unpacking DICOM ZIPs
+- converting DICOM folders to NIfTI with dcm2niix
+- opening FLAIR and MPRAGE images in ITK-SNAP
+- using FLAIR as the main marking image
+- using MPRAGE as an anatomy reference
+- creating a separate segmentation/mask
+- saving masks as NIfTI files
+- measuring label 1 voxels
+- interpreting a small PD/control comparison carefully
+
+
+Part A stop point
+-----------------
+
+Pause after Part 3 if students cannot:
+
+- find converted_niftis
+- open FLAIR in ITK-SNAP
+- open or compare MPRAGE
+- explain why FLAIR and MPRAGE look different
+
+Do not start mask painting until the class can open and inspect images.
+
+
+Part B stop point
+-----------------
+
+Students should save one NIfTI mask per subject in:
+
+    lesion_masks
+
+Filename pattern:
+
+    lesion_ROI_INITIALS_SUBJECT.nii.gz
+
+Example:
+
+    lesion_ROI_SAM_sub-PD01.nii.gz
+
+The mask must use:
+
+    background = 0
+    lesion-like mark = 1
+
+
+ITK-SNAP teaching points
+------------------------
+
+Have students load FLAIR first. FLAIR is the main marking image because
+lesion-like hyperintensities are usually easier to see there.
+
+Then have students review MPRAGE. MPRAGE is useful for anatomy and orientation.
+
+For new students, separate the tasks:
+
+1. Open FLAIR and move through slices.
+2. Adjust FLAIR contrast.
+3. Open or compare MPRAGE.
+4. Create a new segmentation.
+5. Make one test mark with label 1.
+6. Save the mask.
+7. Reopen the mask to confirm the mark is still present.
+
+
+If students cannot paint in ITK-SNAP
+------------------------------------
+
+Ask them to check:
+
+- Did they create a segmentation/mask layer?
+- Is the segmentation/mask layer active?
+- Is label 1 selected?
+- Are they using the paintbrush/manual segmentation tool?
+- Are they clicking inside the image slice view?
+- Is the brush size set to something visible, such as 1 or 2?
+- Is mask opacity/color visible?
+- Can they create and save one tiny test mark?
+
+If needed, restart ITK-SNAP with only one subject open and create a fresh blank
+segmentation.
+
+
+If the analysis sheet does not work
+-----------------------------------
+
+The measurement script is:
+
+    scripts/measure_lesion_masks.sh
+
+It calls:
+
+    python3 scripts/measure_nifti_label1.py
+
+The helper reads each NIfTI mask and counts voxels with value 1. It does not
+use external neuroimaging software.
+
+When analysis fails, inspect:
+
+    results/lesion_voxel_counts.csv
+
+Common meanings:
+
+MISSING
+    The script did not find the expected filename. Check initials, subject ID,
+    and the lesion_masks folder.
+
+measurement_failed
+    The file was found, but it was not readable as the expected NIfTI mask.
+    Check whether ITK-SNAP exported NIfTI rather than another segmentation
+    format.
+
+0 voxels
+    The file was readable, but no voxels had value 1. Reopen the mask in
+    ITK-SNAP and check the active label value.
+
+Not enough numeric measurements
+    compare_groups.sh did not find enough numeric rows in
+    results/lesion_voxel_counts.csv.
+
+
+Suggested video prompts
+-----------------------
+
+Students can record:
+
+- opening ITK-SNAP and loading FLAIR
+- adjusting FLAIR contrast
+- comparing FLAIR and MPRAGE
+- creating a new segmentation
+- making and saving one test mark
+- reading the measurement CSV and explaining one row
+
+The video should show process, hesitation, and debugging, not just final output.

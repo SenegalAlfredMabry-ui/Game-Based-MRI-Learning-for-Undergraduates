@@ -1,0 +1,85 @@
+# Instructor Notes - Getting Hands-On with MRI #1: Converting DICOM to NIfTI
+
+Purpose:
+This game introduces one of the first real neuroimaging data transformations:
+
+    DICOM folder -> NIfTI image + JSON metadata
+
+Revised structure after student feedback:
+
+Part 1:
+    Package setup
+    Unpack DICOM folders
+    MRIcron GUI conversion
+    MPRAGE review
+    FLAIR review with contrast adjustment
+    FLAIR overlay on MPRAGE
+
+Part 2:
+    Create script_niftis
+    Break down a dcm2niix script line by line
+    Convert MPRAGE and FLAIR with code
+    Check output names
+    Review the scripted outputs in MRIcron
+    Reflect on why code is useful after GUI practice
+
+Important teaching points:
+
+1. Do not frame this as merging MPRAGE and FLAIR.
+   MPRAGE and FLAIR are different scan types and should remain separate outputs.
+
+2. Clarify spelling early.
+   DICOM-to-NIfTI is the workflow. dcm2niix is the command.
+
+3. Avoid recommending MRIcroGL as the default path for this version.
+   This version uses MRIcron for GUI conversion and review.
+
+4. Students make their output folders:
+
+       gui_niftis
+       script_niftis
+
+5. Expected script output names:
+
+       sub-001_MPRAGE.nii.gz
+       sub-001_MPRAGE.json
+       sub-001_FLAIR.nii.gz
+       sub-001_FLAIR.json
+
+Actual included DICOM file counts after setup_data.sh:
+
+    MPRAGE: 201 files
+    FLAIR: 45 files
+
+Common problem:
+Students may type dcm2niix -h and see command not found. This usually means
+dcm2niix is not installed or not on PATH. Help them install with Homebrew,
+conda, apt, or run the downloaded binary by full path.
+
+Useful links for students:
+
+    dcm2niix GitHub:
+        https://github.com/rordenlab/dcm2niix
+
+    dcm2niix releases/downloads:
+        https://github.com/rordenlab/dcm2niix/releases
+
+    Homebrew install page:
+        https://formulae.brew.sh/formula/dcm2niix
+
+    PyPI install notes:
+        https://pypi.org/project/dcm2niix/
+
+Teaching language that helped:
+Installing a program and making Terminal able to find it are not always the same
+thing. If dcm2niix -h fails, the program may be installed but not on PATH.
+
+Contrast review:
+For FLAIR, students should try at least two display settings. The useful setting
+should make bright FLAIR signal visible while preserving enough background
+anatomy to orient themselves.
+
+Core reflection:
+After students do the GUI conversion, ask why they should still learn the code
+version. Good answers include reproducibility, scaling to many subjects,
+reducing repeated clicking, and making the workflow easier to check.

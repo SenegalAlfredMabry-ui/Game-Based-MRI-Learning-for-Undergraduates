@@ -1,0 +1,126 @@
+Round 1 - Local Washer
+======================
+
+Goal
+----
+
+Move dirty clothes into the washer by hand, run one local script, and check
+whether clean clothes appeared.
+
+What this teaches
+-----------------
+
+This round teaches the simplest research workflow:
+
+    input files -> processing folder -> script -> output files -> check result
+
+Use Learning Unix Basics in a Virtual House habits first. Before typing a command, ask:
+
+    Where am I?
+    What folders are here?
+    What file do I need to move?
+    Where should it go?
+
+Step 1 - Check where you are
+----------------------------
+
+Use the command that shows your current folder.
+
+Then list what is inside the game folder.
+
+You should see folders such as:
+
+    dirty_laundry
+    washer
+    clean_laundry
+    scripts
+
+Step 2 - Inspect the dirty clothes
+----------------------------------
+
+List the files in:
+
+    dirty_laundry/round1_local
+
+You should find:
+
+    shirt_dirty.png
+    pants_dirty.png
+    socks_dirty.png
+
+Open at least one image if your computer can open PNG files from Terminal.
+
+Hint:
+
+    Mac uses open
+    Linux often uses xdg-open
+
+Try opening:
+
+    dirty_laundry/round1_local/shirt_dirty.png
+
+Question before moving on:
+
+    How do you know the file is dirty before you process it?
+
+Step 3 - Move the clothes into the washer
+-----------------------------------------
+
+Use mv to move each dirty PNG from:
+
+    dirty_laundry/round1_local
+
+into:
+
+    washer
+
+Do not copy the full answer yet. Build one move command from these pieces:
+
+    command: mv
+    source folder: dirty_laundry/round1_local
+    destination folder: washer
+    file example: shirt_dirty.png
+
+After moving the files, list the washer folder to check your work.
+
+If you are stuck, read:
+
+    cat instructions/stuck_instructions/Round_1_Local_Washer_STUCK.txt
+
+Step 4 - Run the local washer
+-----------------------------
+
+Find the script in the scripts folder that sounds like the local washer.
+
+Run it with bash.
+
+Then check:
+
+    clean_laundry
+
+Question before moving on:
+
+    What changed after the script ran?
+
+Step 5 - Check the clean laundry
+--------------------------------
+
+Use ls to inspect the output folder.
+
+Then run the checking script for local laundry.
+
+If the checker says something is missing, work backward:
+
+    Did the dirty files get moved into washer?
+    Did the washer script run?
+    Are the clean outputs in clean_laundry?
+
+Reflection
+----------
+
+Open the Round 1 notes:
+
+    nano student_notes/round1_reflection.txt
+
+Answer the questions while the local washer workflow is still fresh.
+
