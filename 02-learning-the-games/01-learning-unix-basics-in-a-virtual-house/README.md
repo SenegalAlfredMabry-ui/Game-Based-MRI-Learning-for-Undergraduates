@@ -26,6 +26,12 @@ Screenshots and recordings may show earlier folder names. Use the folder names a
 
 Complete Getting Started. You need Bash and a text editor; MRI software is not required. Read the setup script and run the supplied setup_Learning-Unix-Basics-in-a-Virtual-House.sh from the folder containing it. Enter the generated Learning-Unix-Basics-in-a-Virtual-House folder and read README.txt.
 
+## Lesson cheat sheet
+
+![Lesson 1 reference sheet: commands and checks used in Learning Unix Basics in a Virtual House.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.png)
+
+Lesson 1 reference sheet: commands and checks used in Learning Unix Basics in a Virtual House.
+
 [Open the lesson reference sheet](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.pdf)
 
 ![Four groups of Unix commands demonstrate exploring rooms, creating objects, removing practice files, and adding a garden.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Unix-Basics.png)

@@ -26,6 +26,12 @@ Screenshots and recordings may show earlier folder names. Use the folder names a
 
 Complete Lesson 1 — Learning Unix Basics in a Virtual House, including its scripting round. For Lesson 2 — Learning Bash Scripting by Sorting a Wine Shed, run the supplied setup_Learning-Bash-Scripting-by-Sorting-a-Wine-Shed.sh setup script according to the download instructions. Read the generated README and identify the order files, wine folders, basket folders, student templates, scripts, and instructor notes.
 
+## Lesson cheat sheet
+
+![Lesson 2 reference sheet: commands and checks used in Learning Bash Scripting by Sorting a Wine Shed.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reference-Sheet.png)
+
+Lesson 2 reference sheet: commands and checks used in Learning Bash Scripting by Sorting a Wine Shed.
+
 [Open the lesson reference sheet](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reference-Sheet.pdf)
 
 ![Sorting files by hand and with repeated commands.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Workflow.gif)

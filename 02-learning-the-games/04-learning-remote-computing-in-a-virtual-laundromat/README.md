@@ -26,6 +26,12 @@ Screenshots and recordings may show earlier folder names. Use the folder names a
 
 Download and extract Lesson 4 — Learning Remote Computing in a Virtual Laundromat. The current package creates a Learning-Remote-Computing-in-a-Virtual-Laundromat folder. Read FAQ.txt and instructions/Part_0_Before_You_Start.txt, then locate dirty_laundry, original_dirty_laundry, washer, clean_laundry, scripts, remote_laundromat, and student_notes.
 
+## Lesson cheat sheet
+
+![Lesson 4 reference sheet: commands and checks used in Learning Remote Computing in a Virtual Laundromat.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Reference-Sheet.png)
+
+Lesson 4 reference sheet: commands and checks used in Learning Remote Computing in a Virtual Laundromat.
+
 [Open the lesson reference sheet](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Reference-Sheet.pdf)
 
 ![Five rounds progress from a local washer through a larger load and a loop to a simulated remote laundromat and cluster job.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Manual-to-Batch.png)

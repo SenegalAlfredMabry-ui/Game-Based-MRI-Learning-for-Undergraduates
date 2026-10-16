@@ -32,6 +32,12 @@ Screenshots and recordings may show earlier folder names. Use the folder names a
 
 Check dcm2niix, ITK-SNAP, Python 3, and unzip. Read SOFTWARE_SETUP.txt and Part_0_Before_You_Start.txt. Locate raw_dicoms, converted_niftis, lesion_masks, results, subject_groups.csv, scripts, and student_notes.
 
+## Lesson cheat sheet
+
+![Lesson 5 reference sheet: commands and checks used in Getting Hands-On with MRI #2: Lesion Identification in Parkinson’s Disease Research Through Brain Image Analysis.](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reference-Sheet.png)
+
+Lesson 5 reference sheet: commands and checks used in Getting Hands-On with MRI #2: Lesion Identification in Parkinson’s Disease Research Through Brain Image Analysis.
+
 [Open the lesson reference sheet](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reference-Sheet.pdf)
 
 ## Part A Find and convert the scans
@@ -43,6 +49,10 @@ Complete the conversion exercise in Part_2_Write_Conversion_Script.txt. Check su
 ## Part A Inspect the images
 
 Follow Part_3_Open_In_ITK_SNAP.txt. Open a subject’s FLAIR and MPRAGE images, inspect the three viewing planes, adjust contrast, and check that the images belong to the same subject. Pause here until you can explain which image you are viewing and why.
+
+![Two FLAIR images at similar anatomical levels accompany instructions for opening images, comparing anatomy, and marking candidate regions.](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Image-Review.png)
+
+Lesson 5 uses FLAIR images to practice visual inspection and marking candidate hyperintensities. Compare similar anatomy across participants rather than assuming that matching slice numbers align their brains. The highlighted regions illustrate annotation practice and require expert interpretation.
 
 ## Part B Create and save masks
 
@@ -56,6 +66,14 @@ Follow Part_5_Measure_And_Compare.txt. Run the measurement script, inspect resul
 
 Voxel count describes how many voxels were marked. Physical volume also depends on voxel dimensions and valid spatial units. Treat unavailable or unverified volume values as unavailable. Do not replace missing measurements with zero or interpret an incomplete comparison as a final result.
 
+## Example capstone output
+
+![An ITK-SNAP annotation example, six mask counts, and a group plot illustrate the capstone workflow.](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Capstone-Output.png)
+
+One student’s run illustrates the steps from manual marking to a descriptive comparison of six teaching participants. Dots show label-1 voxel counts, horizontal bars show group means, and whiskers show one sample standard deviation, truncated at zero. The two zero values represent saved masks with nothing marked. These counts describe the student’s annotations; they are not physical volumes or evidence of a population-level group difference.
+
+[Open the standalone plot](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Marked-Voxel-Comparison.png) · [Download the capstone figure PDF](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Capstone-Output.pdf)
+
 ## What to keep
 
 Save masks, conversion scripts, measurement outputs, comparison output, and reflection notes. Record the software and lesson version used. Read Part_6_Reset_and_Cheatsheet.txt before resetting any work.
@@ -66,7 +84,7 @@ Tiffany — Software setup and image review — 2:51.
 
 Tiffany answers practical questions about obtaining dcm2niix and ITK-SNAP, opening corresponding FLAIR and MPRAGE images, and adjusting contrast to inspect bright regions more clearly.
 
-Student reflection videos for this lesson are coming soon.
+[Watch Tiffany’s reflection](reflection-gallery.md) on checking images and connecting the lessons to research.
 
 [Watch Tiffany’s Q&A](videos.md) · [Read the transcript](../../assets/transcripts/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Common-Challenges-Tiffany-Huang.md) · [Prepare your reflection video](reflection.md)
 

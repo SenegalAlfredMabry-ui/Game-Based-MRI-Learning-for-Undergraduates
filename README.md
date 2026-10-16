@@ -10,9 +10,9 @@ Students begin by building a virtual house using Unix commands, then organize wi
 
 Together, these games offer an introduction to the computational side of neuroimaging, helping students build the skills and confidence to take their first steps into MRI research.
 
-![A matrix maps computing skills to five lessons, with separate symbols for first introduction and later reuse.](assets/figures/P1-Curriculum-Map.png)
+![Five lesson cards show the activities, undergraduate instructors, and instructional-video totals.](assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Overview.png)
 
-The curriculum map summarizes where computing skills are introduced and reused across the five lessons. Filled markers indicate introduction, open markers indicate later use, and connecting lines show how skills carry forward into subsequent activities.
+The five lessons introduce file navigation, scripting, MRI conversion, simulated remote computing, and brain image analysis. The overview lists 16 instructional recordings; student reflections appear separately in the lesson galleries.
 
 ## Start learning
 

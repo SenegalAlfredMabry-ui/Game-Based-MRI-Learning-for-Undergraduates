@@ -35,3 +35,7 @@ Official software resources: [Bash](https://www.gnu.org/software/bash/), [dcm2ni
 MRI data are supplied by Senegal Alfred Mabry for this teaching project, which has IRB approval. Contact the maintainer for reuse beyond this project; the code and teaching-text licenses do not apply to the scans.
 
 This private preview has been checked on macOS. Linux and Windows/WSL workflows require further validation before classroom deployment.
+
+## Figures and reference sheets
+
+Browse the [complete figure collection](../assets/figures/README.md) for captions, lesson placement, printable PDFs, and the workflow animations. Each lesson also displays its own cheat sheet.

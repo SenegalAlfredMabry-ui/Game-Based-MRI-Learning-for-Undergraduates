@@ -28,6 +28,12 @@ Screenshots and recordings may show earlier folder names. Use the folder names a
 
 Check Bash, unzip, MRIcron, and dcm2niix. Extract the lesson and read instructions/Part_1_Packages_MRIcron_GUI_Review.txt. Locate raw_dicoms_zipped, raw_dicoms, scripts, and student_notes. Unpack the input scans as directed.
 
+## Lesson cheat sheet
+
+![Lesson 3 reference sheet: commands and checks used in Getting Hands-On with MRI #1: Converting DICOM to NIfTI.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reference-Sheet.png)
+
+Lesson 3 reference sheet: commands and checks used in Getting Hands-On with MRI #1: Converting DICOM to NIfTI.
+
 [Open the lesson reference sheet](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reference-Sheet.pdf)
 
 ![DICOM inputs pass through conversion to produce a NIfTI image and JSON metadata.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Workflow.gif)
