@@ -1,6 +1,6 @@
 # Figure captions and placement
 
-The current collection contains 25 figures and animations.
+The collection includes teaching figures, lesson reference sheets, animations, reflection-gallery headers, and a contributor thumbnail template.
 
 ## Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.png
 
@@ -204,3 +204,77 @@ The standalone plot shows the six participant counts used in the capstone-output
 Used in [02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/README.md](../../02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/README.md).
 
 [MATLAB and Octave source for the marked-voxel comparison](Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Plot-Marked-Voxels.m)
+
+## Game-Based-MRI-Learning-for-Undergraduates-Reflection-Guide.png
+
+A reflection connects the task you completed with the decisions you made, the difficulties you worked through, and the steps you would take in future research.
+
+[Open image](Game-Based-MRI-Learning-for-Undergraduates-Reflection-Guide.png) · [PDF](Game-Based-MRI-Learning-for-Undergraduates-Reflection-Guide.pdf)
+
+Used in [03-student-reflections/README.md](../../03-student-reflections/README.md).
+
+## Learning-Unix-Basics-in-a-Virtual-House-Reflection-Gallery-Header.png
+
+Students reflect on their experience with Learning Unix Basics in a Virtual House, including the checks and decisions that shaped their work.
+
+[Open image](Learning-Unix-Basics-in-a-Virtual-House-Reflection-Gallery-Header.png) · [PDF](Learning-Unix-Basics-in-a-Virtual-House-Reflection-Gallery-Header.pdf)
+
+Used in [02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/reflection-gallery.md](../../02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/reflection-gallery.md).
+
+## Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reflection-Gallery-Header.png
+
+Students reflect on their experience with Learning Bash Scripting by Sorting a Wine Shed, including the checks and decisions that shaped their work.
+
+[Open image](Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reflection-Gallery-Header.png) · [PDF](Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Reflection-Gallery-Header.pdf)
+
+Used in [02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/reflection-gallery.md](../../02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/reflection-gallery.md).
+
+## Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Gallery-Header.png
+
+Students reflect on their experience with Getting Hands-On with MRI #1: Converting DICOM to NIfTI, including the checks and decisions that shaped their work.
+
+[Open image](Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Gallery-Header.png) · [PDF](Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Gallery-Header.pdf)
+
+Used in [02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/reflection-gallery.md](../../02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/reflection-gallery.md).
+
+## Learning-Remote-Computing-in-a-Virtual-Laundromat-Reflection-Gallery-Header.png
+
+Students reflect on their experience with Learning Remote Computing in a Virtual Laundromat, including the checks and decisions that shaped their work.
+
+[Open image](Learning-Remote-Computing-in-a-Virtual-Laundromat-Reflection-Gallery-Header.png) · [PDF](Learning-Remote-Computing-in-a-Virtual-Laundromat-Reflection-Gallery-Header.pdf)
+
+Used in [02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/reflection-gallery.md](../../02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/reflection-gallery.md).
+
+## Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reflection-Gallery-Header.png
+
+Students reflect on their experience with Getting Hands-On with MRI #2: Lesion Identification in Parkinson’s Disease Research Through Brain Image Analysis, including the checks and decisions that shaped their work.
+
+[Open image](Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reflection-Gallery-Header.png) · [PDF](Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reflection-Gallery-Header.pdf)
+
+Used in [02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/reflection-gallery.md](../../02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/reflection-gallery.md).
+
+## Game-Based-MRI-Learning-for-Undergraduates-Software-by-Lesson.png
+
+The first computing activities use Bash and ordinary files. The MRI activities add tools for conversion, image viewing, and measurement.
+
+[Open image](Game-Based-MRI-Learning-for-Undergraduates-Software-by-Lesson.png) · [PDF](Game-Based-MRI-Learning-for-Undergraduates-Software-by-Lesson.pdf)
+
+Used in [05-resources/README.md](../../05-resources/README.md).
+
+## Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Files-and-Measurement-Checks.png
+
+Keep participant identifiers consistent from conversion through mask measurement. A saved mask with zero marked voxels is a valid recorded result; a missing or ambiguous mask needs attention.
+
+[Open image](Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Files-and-Measurement-Checks.png) · [PDF](Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Files-and-Measurement-Checks.pdf)
+
+Used in [02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/README.md](../../02-learning-the-games/05-getting-hands-on-with-mri-2-lesion-identification-in-parkinsons-disease-research-through-brain-image-analysis/README.md).
+
+## Reflection thumbnail template
+
+A design resource for preparing approved reflection recordings. Replace the placeholder with an approved recording frame and update the lesson label before use.
+
+[Preview](Game-Based-MRI-Learning-for-Undergraduates-Reflection-Thumbnail-Template.png) · [PDF](Game-Based-MRI-Learning-for-Undergraduates-Reflection-Thumbnail-Template.pdf) · [Editable HTML](Game-Based-MRI-Learning-for-Undergraduates-Reflection-Thumbnail-Template.html)
+
+Used in [instructor guidance](../../04-for-instructors/README.md#preparing-reflection-thumbnails).
+
+The populated reflection thumbnails for Lindsey Ko and Tiffany Huang are stored in [assets/thumbnails](../thumbnails/) and displayed in their lesson galleries. Images containing student likenesses remain subject to the [media licensing exception](../../LICENSES/README.md).

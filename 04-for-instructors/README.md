@@ -40,3 +40,7 @@ You can change the setting of a file-sorting exercise or select a subset of less
 ## Public solutions
 
 Instructor notes and solutions are available to students as well as teachers. They can support checking and discussion after an attempt. Ask students to explain how a solution works and where it would need to change for a different input.
+
+## Preparing reflection thumbnails
+
+Use the [reflection thumbnail template](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Reflection-Thumbnail-Template.png) when preparing an approved recording for a lesson gallery. An [editable HTML version](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Reflection-Thumbnail-Template.html) is available: download it, replace the placeholder with a frame from the recording, and change the lesson number, title, and color. The HTML version loads its typefaces from Google Fonts when online. Keep the contributor’s credit, duration, and watch/transcript links in the gallery text. The template is a design resource and should not appear as a video awaiting playback.

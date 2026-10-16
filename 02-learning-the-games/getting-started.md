@@ -26,6 +26,8 @@ Use cat followed by a filename to read a short text file. Use nano followed by a
 
 ## Check your tools
 
+See the [software-by-lesson guide](../05-resources/README.md#software) for the tools required by each activity.
+
 Run bash --version to check Bash. For the capstone, run python3 --version. For MRI conversion, check that dcm2niix is installed and available in Terminal. Launch the required image viewer separately to confirm that it opens.
 
 Lesson 3 uses MRIcron, a program for viewing brain images, alongside the conversion workflow described in its instructions. Lesson 5 uses ITK-SNAP, a program for viewing images and creating manual segmentations. Follow each lesson’s software instructions so the tools match the task.

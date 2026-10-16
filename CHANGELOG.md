@@ -1,5 +1,9 @@
 # Changelog
 
+## Documentation update — 2026-10-16
+
+Added a reflection guide, a software-by-lesson matrix, a scan-to-mask measurement guide, and reflection-gallery headers for all five lessons. Updated Lindsey Ko’s and Tiffany Huang’s reflection thumbnails. Added printable figures, text descriptions, and a contributor thumbnail template.
+
 ## 0.1.0 — Initial public release — 2026-10-16
 
 Five lessons, formally named game folders and setup scripts, reviewed teaching text, lesson-specific video galleries, instructional media, and a text feedback form. Scan conversion is Lesson 3; remote computing is Lesson 4.

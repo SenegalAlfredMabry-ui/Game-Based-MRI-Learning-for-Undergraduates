@@ -1,5 +1,11 @@
 # Student reflections
 
+![Lesson 3 student reflection gallery for Getting Hands-On with MRI #1: Converting DICOM to NIfTI.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Gallery-Header.png)
+
+Students reflect on their experience with Getting Hands-On with MRI #1: Converting DICOM to NIfTI, including the checks and decisions that shaped their work.
+
+[Download a printable PDF](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Gallery-Header.pdf)
+
 ## Getting Hands-On with MRI #1: Converting DICOM to NIfTI
 
 Hear how other students approached this lesson, the problems they worked through, and the connections they made to MRI research. Their reflections offer examples to consider as you explain your own experience and decide what you would do next time.

@@ -6,6 +6,14 @@ Reflection gives you an opportunity to explain what you learned and how you work
 
 Each lesson has its own reflection-video gallery. After completing the activity, use the five shared questions below to prepare a video about your experience. You can record your screen, narrate slides, or speak to the camera. Showing your face is optional.
 
+![Five reflection questions paired with examples of commands, errors, folders, research connections, and next steps.](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Reflection-Guide.png)
+
+A reflection connects the task you completed with the decisions you made, the difficulties you worked through, and the steps you would take in future research.
+
+[Download a printable PDF](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Reflection-Guide.pdf)
+
+Examples to discuss include moving a file with `mv Decoration/bed.txt House/Bedroom/`, checking an unexpected folder error with `pwd` and `ls`, and explaining how the subject identifier connects a mask in `lesion_masks/` to the correct scan. For a future task, describe what you would check with `pwd`, `ls`, and `cat README.txt` before changing files. These are illustrative examples; describe your own work and remove personal information from anything you show. Error wording varies between shells.
+
 ## Prepare your reflection video
 
 Explain the work in your own words and use an example from your attempt when it helps. You might show a command, an output folder, or a step you checked carefully. Record only the lesson materials and remove personal information from anything visible on screen. Share the recording with your instructor or the project team through the agreed contribution route.

@@ -40,6 +40,26 @@ Lesson 5 reference sheet: commands and checks used in Getting Hands-On with MRI 
 
 [Open the lesson reference sheet](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Reference-Sheet.pdf)
 
+## Keep scans, masks, and results connected
+
+![Subject sub-PD01 moves from raw DICOM scans to converted NIfTI images, a saved lesion mask, and a measurement row. A table distinguishes a valid zero count, a missing mask, and ambiguous matching masks.](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Files-and-Measurement-Checks.png)
+
+Keep participant identifiers consistent from conversion through mask measurement. A saved mask with zero marked voxels is a valid recorded result; a missing or ambiguous mask needs attention.
+
+[Download a printable PDF](../../assets/figures/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Files-and-Measurement-Checks.pdf)
+
+For example, `raw_dicoms/sub-PD01/` contains the MPRAGE and FLAIR archives. After unpacking and conversion, the images and JSON sidecars belong in `converted_niftis/sub-PD01/`. Save the corresponding mask as `lesion_masks/lesion_ROI_INITIALS_sub-PD01.nii.gz`, replacing `INITIALS` with your initials. Label 1 identifies the marked voxels and label 0 is background. The measurement script uses `subject_groups.csv` to associate each subject with its group.
+
+Check these fields in `results/lesion_voxel_counts.csv` before running the group comparison:
+
+| Situation | `label_1_voxels` | `status` | `mask_file` |
+| :--- | :--- | :--- | :--- |
+| Valid saved mask with nothing marked | `0` | `ok` | Path to the saved mask |
+| No mask found | `NA` | `needs_mask` | `MISSING` |
+| More than one matching mask | `NA` | `choose_one_mask` | `AMBIGUOUS` |
+
+Resolve missing or ambiguous masks before comparing groups. Preserve other versions outside the measurement folder, or provide unique initials to select the intended masks. A count of zero records an annotation result; it does not establish the absence of disease. These counts describe marked voxels, and physical volume requires valid voxel dimensions and spatial units.
+
 ## Part A Find and convert the scans
 
 Read Part_1_Find_The_Study.txt. Identify each subject’s MPRAGE and FLAIR archives. Run bash scripts/unpack_dicoms.sh as directed. After unpacking, the capstone expects 200 MPRAGE DICOM files and 44 FLAIR DICOM files per subject.

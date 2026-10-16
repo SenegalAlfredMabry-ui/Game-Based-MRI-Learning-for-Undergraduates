@@ -2,7 +2,15 @@
 
 ## Software
 
-Lesson 1, Lesson 2, and Lesson 4 use Bash and ordinary files. Lesson 3 adds dcm2niix and MRIcron. Lesson 5 uses dcm2niix, ITK-SNAP, and Python 3. Use the installation route appropriate to your computer and confirm the program’s version before starting the lesson.
+![Software matrix: all five lessons use Bash and a text editor; Lesson 3 adds unzip, dcm2niix, and MRIcron; Lesson 5 adds unzip, dcm2niix, ITK-SNAP, and Python 3.](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Software-by-Lesson.png)
+
+The first computing activities use Bash and ordinary files. The MRI activities add tools for conversion, image viewing, and measurement.
+
+[Download a printable PDF](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Software-by-Lesson.pdf)
+
+Lesson 1, Lesson 2, and Lesson 4 use Bash and ordinary files. Lesson 3 adds unzip, dcm2niix, and MRIcron. Lesson 5 uses unzip, dcm2niix, ITK-SNAP, and Python 3. Use the installation route appropriate to your computer and confirm the program’s version before starting the lesson.
+
+The unzip command is used to unpack the internal scan archives in Lessons 3 and 5. Use your file browser to extract the main lesson downloads. Lesson 4 simulates remote computing locally and does not require a cluster account. Image viewers are separate programs; open the viewer required for your lesson to confirm that it starts.
 
 ## Command reference
 
