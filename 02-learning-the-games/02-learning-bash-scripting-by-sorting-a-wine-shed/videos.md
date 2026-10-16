@@ -6,20 +6,20 @@ Use these recordings alongside the written instructions. Pause to try each step 
 
 ### Understanding the wine shed
 
-[![Understanding the wine shed](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.jpg)](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.mp4)
+[![Understanding the wine shed](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.jpg)](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.md)
 
-[Watch video](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.mp4) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.md)
+[Watch video](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.md) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-01.md)
 
 ### Sorting an order by hand
 
-[![Sorting an order by hand](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.jpg)](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.mp4)
+[![Sorting an order by hand](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.jpg)](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.md)
 
-[Watch video](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.mp4) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.md)
+[Watch video](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.md) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-02.md)
 
 ### Common questions
 
-[![Common questions](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.jpg)](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.mp4)
+[![Common questions](../../assets/thumbnails/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.jpg)](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.md)
 
-[Watch video](../../assets/videos/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.mp4) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.md)
+[Watch video](watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.md) · [Transcript draft](../../assets/transcripts/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-03.md)
 
 [Student reflections](reflection-gallery.md) · [Return to lesson](README.md)

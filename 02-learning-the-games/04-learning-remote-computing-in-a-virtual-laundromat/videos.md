@@ -6,20 +6,20 @@ Use these recordings alongside the written instructions. Pause to try each step 
 
 ### Following the laundry workflow
 
-[![Following the laundry workflow](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.jpg)](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.mp4)
+[![Following the laundry workflow](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.jpg)](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-01.md)
 
-[Watch video](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.mp4) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.md)
+[Watch video](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-01.md) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-01.md)
 
 ### Continuing the laundry workflow
 
-[![Continuing the laundry workflow](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.jpg)](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.mp4)
+[![Continuing the laundry workflow](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.jpg)](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-02.md)
 
-[Watch video](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.mp4) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.md)
+[Watch video](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-02.md) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-02.md)
 
 ### Common questions
 
-[![Common questions](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.jpg)](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.mp4)
+[![Common questions](../../assets/thumbnails/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.jpg)](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-03.md)
 
-[Watch video](../../assets/videos/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.mp4) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.md)
+[Watch video](watch-Learning-Remote-Computing-in-a-Virtual-Laundromat-03.md) · [Transcript draft](../../assets/transcripts/Learning-Remote-Computing-in-a-Virtual-Laundromat-03.md)
 
 [Student reflections](reflection-gallery.md) · [Return to lesson](README.md)

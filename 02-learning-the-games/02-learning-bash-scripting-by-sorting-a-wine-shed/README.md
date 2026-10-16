@@ -10,7 +10,7 @@ By the end of this lesson, you should be able to read information from files, ma
 
 Researchers often need to apply the same decision to many files, which is why we write scripts. In this lesson, you fill customer orders by selecting matching wine files and placing them into basket folders. Begin by reading and moving individual files, then express the same decisions in a script that can handle several orders. You do not need to be a sommelier to play; the information you need is written in the files.
 
-![A customer order specifies red wine with cherry flavor. A Bash loop checks file attributes and moves matching files to a basket.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Wine-Shed.png.png)
+![A customer order specifies red wine with cherry flavor. A Bash loop checks file attributes and moves matching files to a basket.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Wine-Shed.png)
 
 Lesson 2 introduces Bash scripting through a file-sorting task. Students translate customer orders into conditions, use variables and loops to identify matching wine files, and check that the selected files reach the correct baskets.
 
@@ -36,7 +36,7 @@ Sorting files by hand and with repeated commands.
 
 Read the orders and inspect the attributes in each wine file. Match the requested color and flavor before moving a file. Inspect each basket after the move. A successful move alone does not establish that you chose the correct wine.
 
-![Five steps show reading orders, inspecting wine files, moving a match, writing a loop, and checking the resulting baskets.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Sorting-Files.png.png)
+![Five steps show reading orders, inspecting wine files, moving a match, writing a loop, and checking the resulting baskets.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Sorting-Files.png)
 
 The sorting workflow moves from reading an order and inspecting individual files to expressing the same decisions in a Bash loop. Students check both the matching conditions and the destination baskets to determine whether the script performed the intended task.
 

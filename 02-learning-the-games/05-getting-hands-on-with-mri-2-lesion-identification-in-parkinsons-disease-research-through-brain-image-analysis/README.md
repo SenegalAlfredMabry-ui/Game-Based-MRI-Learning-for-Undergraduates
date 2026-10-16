@@ -68,7 +68,7 @@ Tiffany answers practical questions about obtaining dcm2niix and ITK-SNAP, openi
 
 Student reflection videos for this lesson are coming soon.
 
-Actions: Watch Tiffany’s Q&A; Read the transcript; Prepare your reflection video.
+[Watch Tiffany’s Q&A](videos.md) · [Read the transcript](../../assets/transcripts/Getting-Hands-On-with-MRI-2-Lesion-Identification-in-Parkinsons-Disease-Research-Through-Brain-Image-Analysis-Common-Challenges-Tiffany-Huang.md) · [Prepare your reflection video](reflection.md)
 
 ## Continue learning
 

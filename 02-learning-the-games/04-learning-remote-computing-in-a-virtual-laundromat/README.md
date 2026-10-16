@@ -10,7 +10,7 @@ By the end of this lesson, you should be able to follow files from an input fold
 
 An MRI study may contain several scans from each of many participants. Repeating every step by hand takes time and makes it harder to apply the same procedure consistently. This lesson uses a virtual laundromat to make that problem visible: a few clothing files are manageable individually, but a larger load calls for a repeatable workflow. You will move from local processing to batches and a simulation of remote access, file transfer, and job submission. The clothing files are ordinary PNG images, allowing you to learn the organization of these workflows before using them with research data.
 
-![A local computer connects to a simulated remote laundromat. Terminal examples show inspecting inputs, simulated login, and checking processed files.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Virtual-Laundromat.png.png)
+![A local computer connects to a simulated remote laundromat. Terminal examples show inspecting inputs, simulated login, and checking processed files.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Virtual-Laundromat.png)
 
 Lesson 4 uses a virtual laundromat to introduce batch processing and remote-computing concepts. Students follow clothing files through transfer, processing, and output checks while a local simulation represents a remote system.
 
@@ -28,7 +28,7 @@ Download and extract Lesson 4 — Learning Remote Computing in a Virtual Laundro
 
 [Open the lesson reference sheet](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Reference-Sheet.pdf)
 
-![Five rounds progress from a local washer through a larger load and a loop to a simulated remote laundromat and cluster job.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Manual-to-Batch.png.png)
+![Five rounds progress from a local washer through a larger load and a loop to a simulated remote laundromat and cluster job.](../../assets/figures/Learning-Remote-Computing-in-a-Virtual-Laundromat-Manual-to-Batch.png)
 
 The five rounds of Lesson 4 develop a workflow from individual file operations to repeated processing and simulated remote job submission. Each round asks students to identify the inputs, understand the processing step, and check the outputs.
 

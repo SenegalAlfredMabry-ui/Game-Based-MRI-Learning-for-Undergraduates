@@ -36,49 +36,49 @@ Undergraduate contributors Chloe King, Lindsey Ko, Osiel Iglesias, and Tiffany H
 
 Used in [01-about-the-project/README.md](../../01-about-the-project/README.md).
 
-## Learning-Unix-Basics-in-a-Virtual-House-Virtual-House.png.png
+## Learning-Unix-Basics-in-a-Virtual-House-Virtual-House.png
 
 Lesson 1 uses a virtual house to introduce Unix file operations. Rooms represent directories and objects represent files, allowing students to practice navigation, file manipulation, and checking the results of commands in a familiar setting.
 
 Used in [02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md](../../02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md).
 
-## Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Wine-Shed.png.png
+## Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Wine-Shed.png
 
 Lesson 2 introduces Bash scripting through a file-sorting task. Students translate customer orders into conditions, use variables and loops to identify matching wine files, and check that the selected files reach the correct baskets.
 
 Used in [02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/README.md](../../02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/README.md).
 
-## Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Scan-Converter.png.png
+## Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Scan-Converter.png
 
 Lesson 3 introduces the organization of scanner output and the conversion of DICOM series into NIfTI images. The examples connect scan folders with their image files and show why filenames alone do not determine slice order.
 
 Used in [02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/README.md](../../02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/README.md).
 
-## Learning-Remote-Computing-in-a-Virtual-Laundromat-Virtual-Laundromat.png.png
+## Learning-Remote-Computing-in-a-Virtual-Laundromat-Virtual-Laundromat.png
 
 Lesson 4 uses a virtual laundromat to introduce batch processing and remote-computing concepts. Students follow clothing files through transfer, processing, and output checks while a local simulation represents a remote system.
 
 Used in [02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/README.md](../../02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundromat/README.md).
 
-## Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Sorting-Files.png.png
+## Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Sorting-Files.png
 
 The sorting workflow moves from reading an order and inspecting individual files to expressing the same decisions in a Bash loop. Students check both the matching conditions and the destination baskets to determine whether the script performed the intended task.
 
 Used in [02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/README.md](../../02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/README.md).
 
-## Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-DICOM-to-NIfTI.png.png
+## Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-DICOM-to-NIfTI.png
 
 The conversion workflow links DICOM input files, a dcm2niix command, and the resulting NIfTI image and JSON metadata. Students inspect the image and check the outputs before continuing to analysis. The file count shown belongs to the illustrated teaching series.
 
 Used in [02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/README.md](../../02-learning-the-games/03-getting-hands-on-with-mri-1-converting-dicom-to-nifti/README.md).
 
-## Learning-Unix-Basics-in-a-Virtual-House-Unix-Basics.png.png
+## Learning-Unix-Basics-in-a-Virtual-House-Unix-Basics.png
 
 Examples from Lesson 1 connect common Unix commands with visible changes in the virtual house. Students inspect directories, create and move files, and verify the results as they complete the activity.
 
 Used in [02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md](../../02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md).
 
-## Learning-Remote-Computing-in-a-Virtual-Laundromat-Manual-to-Batch.png.png
+## Learning-Remote-Computing-in-a-Virtual-Laundromat-Manual-to-Batch.png
 
 The five rounds of Lesson 4 develop a workflow from individual file operations to repeated processing and simulated remote job submission. Each round asks students to identify the inputs, understand the processing step, and check the outputs.
 

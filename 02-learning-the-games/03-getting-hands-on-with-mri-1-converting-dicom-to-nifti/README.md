@@ -12,7 +12,7 @@ MRI scanners commonly save images in DICOM, a format that stores image data toge
 
 Software references: MRIcron — https://www.nitrc.org/projects/mricron ; dcm2niix — https://github.com/rordenlab/dcm2niix
 
-![DICOM scan folders feed a conversion workflow that produces NIfTI images and metadata. Directory listings illustrate that alphabetical filename order can differ from image order.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Scan-Converter.png.png)
+![DICOM scan folders feed a conversion workflow that produces NIfTI images and metadata. Directory listings illustrate that alphabetical filename order can differ from image order.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Scan-Converter.png)
 
 Lesson 3 introduces the organization of scanner output and the conversion of DICOM series into NIfTI images. The examples connect scan folders with their image files and show why filenames alone do not determine slice order.
 
@@ -40,7 +40,7 @@ The lesson uses two types of MRI scan. MPRAGE stands for magnetization-prepared 
 
 Check that both files belong to the intended subject and scan types. Displaying two images together does not itself establish that they are spatially aligned.
 
-![Four stages show raw DICOM files, conversion with dcm2niix, the image and metadata outputs, and visual inspection of the converted scan.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-DICOM-to-NIfTI.png.png)
+![Four stages show raw DICOM files, conversion with dcm2niix, the image and metadata outputs, and visual inspection of the converted scan.](../../assets/figures/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-DICOM-to-NIfTI.png)
 
 The conversion workflow links DICOM input files, a dcm2niix command, and the resulting NIfTI image and JSON metadata. Students inspect the image and check the outputs before continuing to analysis. The file count shown belongs to the illustrated teaching series.
 
@@ -60,7 +60,7 @@ Lindsey — Converting scans and checking outputs — 2:04.
 
 Lindsey explains how she converted MPRAGE and FLAIR scans by hand and with a script. She describes mistaking a slow conversion for a frozen screen, checking the gui_niftis and script_niftis folders, and choosing a script for repeated work.
 
-Actions: Watch Lindsey’s reflection; Read the transcript; Prepare your reflection video.
+[Watch Lindsey’s reflection](reflection-gallery.md) · [Read the transcript](../../assets/transcripts/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.md) · [Prepare your reflection video](reflection.md)
 
 ## Next lesson
 

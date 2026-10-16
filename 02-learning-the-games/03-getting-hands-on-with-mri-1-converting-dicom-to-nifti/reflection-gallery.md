@@ -12,5 +12,5 @@ Lindsey describes converting MPRAGE and FLAIR scans through MRIcron and a script
 
 | Lindsey Ko — 2:04 |
 | :--- |
-| [![Lindsey describes scan conversion and checking outputs](../../assets/thumbnails/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.jpg)](../../assets/videos/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.mp4) |
-| [Watch reflection](../../assets/videos/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.mp4) · [Transcript draft](../../assets/transcripts/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.md) |
+| [![Lindsey describes scan conversion and checking outputs](../../assets/thumbnails/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.jpg)](watch-Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.md) |
+| [Watch reflection](watch-Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.md) · [Transcript draft](../../assets/transcripts/Getting-Hands-On-with-MRI-1-Converting-DICOM-to-NIfTI-Reflection-Lindsey-Ko.md) |

@@ -10,7 +10,7 @@ By the end of this lesson, you should be able to find your current directory, mo
 
 Supporting research begins with understanding where files are stored and how they relate to one another. In this lesson, you explore that idea by building and navigating a virtual house. Rooms are folders and objects are files. Use Terminal to inspect the house, move its contents, and make changes you can verify. In the final round, combine ingredient files into a smoothie with your first script.
 
-![A house diagram maps rooms to directories and objects to files, alongside examples of moving a candle, listing a room, and creating objects.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Virtual-House.png.png)
+![A house diagram maps rooms to directories and objects to files, alongside examples of moving a candle, listing a room, and creating objects.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Virtual-House.png)
 
 Lesson 1 uses a virtual house to introduce Unix file operations. Rooms represent directories and objects represent files, allowing students to practice navigation, file manipulation, and checking the results of commands in a familiar setting.
 
@@ -28,7 +28,7 @@ Complete Getting Started. You need Bash and a text editor; MRI software is not r
 
 [Open the lesson reference sheet](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.png) · [Download a printable PDF](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Reference-Sheet.pdf)
 
-![Four groups of Unix commands demonstrate exploring rooms, creating objects, removing practice files, and adding a garden.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Unix-Basics.png.png)
+![Four groups of Unix commands demonstrate exploring rooms, creating objects, removing practice files, and adding a garden.](../../assets/figures/Learning-Unix-Basics-in-a-Virtual-House-Unix-Basics.png)
 
 Examples from Lesson 1 connect common Unix commands with visible changes in the virtual house. Students inspect directories, create and move files, and verify the results as they complete the activity.
 
