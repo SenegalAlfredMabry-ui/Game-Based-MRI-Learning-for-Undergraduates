@@ -20,6 +20,14 @@ Explain the work in your own words and use an example from your attempt when it 
 
 Publication in a lesson gallery is a separate step from recording a reflection for your instructor. The project team will confirm the display credit, description, and permission to feature the video before adding it to the gallery.
 
+### From completing a task to reflecting on it
+
+![A simulated Laundromat job and its checked outputs appear beside the five shared reflection prompts.](../assets/figures/Figure-3a-Finish-the-Task-and-Answer-the-Prompts.png)
+
+Reflection begins with examining what happened during the lesson. **(A)** A worked example from *Learning Remote Computing in a Virtual Laundromat* shows how a learner checks a simulated job’s log and output files. **(B)** Five shared prompts invite students to describe what they learned, where they encountered difficulty, which tools mattered, and how they might approach similar work in MRI research.
+
+[Open full-size figure](../assets/figures/Figure-3a-Finish-the-Task-and-Answer-the-Prompts.png) · [Download PDF](../assets/figures/Figure-3a-Finish-the-Task-and-Answer-the-Prompts.pdf) · [Download SVG](../assets/figures/Figure-3a-Finish-the-Task-and-Answer-the-Prompts.svg)
+
 ## Five shared questions
 
 What did this game teach you how to do?
@@ -31,6 +39,14 @@ What command, file, or folder felt most important in this game?
 How do you think this game might help you with real research or MRI work?
 
 What would you do first if you had to solve a similar problem on your own?
+
+### Learning from other students’ reflections
+
+![Aaryan Sajwani’s Lesson 4 reflection gallery card illustrates how a student video is featured with permission and credit.](../assets/figures/Figure-3b-Share-in-the-Lesson-Gallery.png)
+
+Each lesson has its own reflection-video gallery, where students describe their experiences in their own words. This example features Aaryan Sajwani’s reflection on *Learning Remote Computing in a Virtual Laundromat*. Videos are featured with the contributor’s permission and chosen credit, alongside a description and, when available, a transcript.
+
+[Open full-size figure](../assets/figures/Figure-3b-Share-in-the-Lesson-Gallery.png) · [Download PDF](../assets/figures/Figure-3b-Share-in-the-Lesson-Gallery.pdf) · [Download SVG](../assets/figures/Figure-3b-Share-in-the-Lesson-Gallery.svg)
 
 ## Corrections and featuring
 

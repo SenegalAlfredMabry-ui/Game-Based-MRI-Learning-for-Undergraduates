@@ -8,6 +8,14 @@ You have sorted a Wine Shed order by hand; now work through the Round 2 script w
 
 https://github.com/user-attachments/assets/b056f676-6fb9-4407-be76-5d606846c1c3
 
+### Check that the basket matches the order
+
+![An order is read, the sorting script runs, and a selected wine is compared with the customer’s requested color and flavor.](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order.gif)
+
+After running the Wine Shed sorting script, Carlo Bayona checks the customer’s basket and opens a selected wine file. Comparing its color and flavor with the order shows why checking a result involves more than counting files. The animation redraws the commands and output from his walkthrough for readability.
+
+[View still image](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order-static.png) · [Open MP4](../../assets/figures/Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order.mp4)
+
 ## Using this example
 
 Carlo uses WSL on Windows, with paths beginning in `/mnt/c`. Use the location of the lesson folder on your own computer.

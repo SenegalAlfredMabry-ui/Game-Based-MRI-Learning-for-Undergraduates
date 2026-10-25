@@ -8,6 +8,14 @@ These videos were made by fellow students. Our amazing undergraduates Katie Wu, 
 
 [Written Getting Started guide](getting-started.md)
 
+### Getting started and finding support
+
+![Eight Getting Started topics grouped by preparation, file operations, and checking work, with examples of lesson support.](../assets/figures/Figure-1a-Course-Materials-and-Support.png)
+
+Eight short videos, made by undergraduate contributors, introduce the computer skills used throughout the five lessons. **(A)** The topics cover preparing a lesson, working with files, running scripts, and checking results. **(B)** Reference sheets, troubleshooting guidance, and reflection prompts provide additional support, illustrated here with the smoothie-script task from *Learning Unix Basics in a Virtual House*.
+
+[Open full-size figure](../assets/figures/Figure-1a-Course-Materials-and-Support.png) · [Download PDF](../assets/figures/Figure-1a-Course-Materials-and-Support.pdf) · [Download SVG](../assets/figures/Figure-1a-Course-Materials-and-Support.svg)
+
 ## Find your way around the project
 
 Katie Wu · 2:37 · Project orientation

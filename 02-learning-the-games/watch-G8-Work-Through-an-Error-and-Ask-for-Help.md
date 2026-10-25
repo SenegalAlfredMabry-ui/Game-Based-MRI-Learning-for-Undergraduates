@@ -8,6 +8,14 @@ An error message can help you decide what to check next. Aaryan works through an
 
 https://github.com/user-attachments/assets/c2b82f23-0241-4c8c-8f70-ea9cb0eb85b6
 
+### Working through a missing-file error
+
+![Four steps show a missing-file error, checks of location and filename, and the corrected command displaying the instructions.](../assets/figures/Figure-S1-Worked-Troubleshooting-Example.png)
+
+Aaryan Sajwani demonstrates how to investigate a missing-file message by checking the current folder, listing the available files, and comparing the typed path with the actual filename. The example separates two problems: running the command from the wrong folder and entering a filename with different capitalization and a missing underscore. The corrected command displays the requested instructions.
+
+[Open full-size figure](../assets/figures/Figure-S1-Worked-Troubleshooting-Example.png) · [Download PDF](../assets/figures/Figure-S1-Worked-Troubleshooting-Example.pdf) · [Download SVG](../assets/figures/Figure-S1-Worked-Troubleshooting-Example.svg)
+
 ## Using this example
 
 The filename typed in the failed command, `round3_robot_washer_loop.txt`, is missing the underscore before `3`. Its capitalization also differs from `Round_3_Robot_Washer_Loop.txt`. The on-screen note points out both differences. Use the exact name shown by `ls`, since case sensitivity depends on the filesystem.

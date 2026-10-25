@@ -26,6 +26,14 @@ The activities connect approachable game tasks with the organization and process
 
 The curriculum begins with file navigation and a first script in Lesson 1, then develops conditions and loops in Lesson 2. Lesson 3 applies those skills to MRI conversion. Lesson 4 extends repeated processing to batches and simulated remote work. In Lesson 5, students combine these skills to prepare, inspect, annotate, and compare brain images.
 
+### What students produce and how they check it
+
+![Five lessons paired with their tasks, outputs, and checks; examples distinguish student recordings, fresh runs, and schematics.](../assets/figures/Figure-2-What-Students-Produce-in-the-Five-Lessons.png)
+
+Each lesson pairs a practical task with an output that students can inspect: a combined text file, a sorted customer basket, converted MRI images, simulated computing outputs and logs, or image masks and a measurement table. The examples distinguish output from a student recording, fresh runs of the game files, and schematic listings drawn from the instructions. The Laundromat runs locally; the final lesson’s measurements describe students’ markings of lesion-like regions.
+
+[Open full-size figure](../assets/figures/Figure-2-What-Students-Produce-in-the-Five-Lessons.png) · [Download PDF](../assets/figures/Figure-2-What-Students-Produce-in-the-Five-Lessons.pdf) · [Download SVG](../assets/figures/Figure-2-What-Students-Produce-in-the-Five-Lessons.svg)
+
 ## Reflection and peer support
 
 Recording a reflection gives students practice explaining what they did, what challenged them, and how they worked through a problem. These accounts can help the next group of learners recognize difficulties and consider approaches they might try. Instructional recordings demonstrate procedures; reflection recordings describe the learner’s experience. Each lesson provides a clearly labeled place for both.

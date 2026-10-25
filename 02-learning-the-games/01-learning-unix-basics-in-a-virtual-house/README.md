@@ -54,6 +54,14 @@ Inspect the ingredient files and add an ingredient with nano. Write make_smoothi
 
 Compare running a script with bash and making it executable with chmod +x. The useful result is a readable smoothie file whose contents you can explain.
 
+### Writing and checking your first script
+
+![Written instructions and Tiffany Huang’s demonstration accompany writing, running, and checking the smoothie script.](../../assets/figures/Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.png)
+
+The smoothie task introduces Bash scripting through a familiar idea: combining ingredients. Alongside the written instructions, Tiffany Huang demonstrates how to write `make_smoothie.sh`, run it, and inspect the resulting `smoothie.txt` file. The script combines the contents of the ingredient files without changing those inputs. Checking the output completes the task by confirming that the expected ingredient text appears.
+
+[Open full-size figure](../../assets/figures/Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.png) · [Download PDF](../../assets/figures/Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.pdf) · [Download SVG](../../assets/figures/Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.svg)
+
 ## Check your work and what to keep
 
 Keep your house tour, created objects, make_smoothie.sh, smoothie.txt, and round reflections. Check the destination of each moved file and the contents of the final smoothie. If a command succeeds but the expected file is elsewhere, use pwd and the paths in your command to explain why.

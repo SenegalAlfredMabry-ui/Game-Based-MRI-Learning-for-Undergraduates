@@ -278,3 +278,67 @@ A design resource for preparing approved reflection recordings. Replace the plac
 Used in [instructor guidance](../../04-for-instructors/README.md#preparing-reflection-thumbnails).
 
 The populated reflection thumbnails for Lindsey Ko and Tiffany Huang are stored in [assets/thumbnails](../thumbnails/) and displayed in their lesson galleries. Images containing student likenesses remain subject to the [media licensing exception](../../LICENSES/README.md).
+
+## Getting started and finding support
+
+Eight short videos, made by undergraduate contributors, introduce the computer skills used throughout the five lessons. **(A)** The topics cover preparing a lesson, working with files, running scripts, and checking results. **(B)** Reference sheets, troubleshooting guidance, and reflection prompts provide additional support, illustrated here with the smoothie-script task from *Learning Unix Basics in a Virtual House*.
+
+[PNG](Figure-1a-Course-Materials-and-Support.png) · [PDF](Figure-1a-Course-Materials-and-Support.pdf) · [SVG](Figure-1a-Course-Materials-and-Support.svg)
+
+Used in [02-learning-the-games/getting-started-videos.md](../../02-learning-the-games/getting-started-videos.md).
+
+## Writing and checking your first script
+
+The smoothie task introduces Bash scripting through a familiar idea: combining ingredients. Alongside the written instructions, Tiffany Huang demonstrates how to write `make_smoothie.sh`, run it, and inspect the resulting `smoothie.txt` file. The script combines the contents of the ingredient files without changing those inputs. Checking the output completes the task by confirming that the expected ingredient text appears.
+
+[PNG](Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.png) · [PDF](Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.pdf) · [SVG](Figure-1b-A-Worked-Task-Build-the-Smoothie-Machine.svg)
+
+Used in [02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md](../../02-learning-the-games/01-learning-unix-basics-in-a-virtual-house/README.md).
+
+## What students produce and how they check it
+
+Each lesson pairs a practical task with an output that students can inspect: a combined text file, a sorted customer basket, converted MRI images, simulated computing outputs and logs, or image masks and a measurement table. The examples distinguish output from a student recording, fresh runs of the game files, and schematic listings drawn from the instructions. The Laundromat runs locally; the final lesson’s measurements describe students’ markings of lesion-like regions.
+
+[PNG](Figure-2-What-Students-Produce-in-the-Five-Lessons.png) · [PDF](Figure-2-What-Students-Produce-in-the-Five-Lessons.pdf) · [SVG](Figure-2-What-Students-Produce-in-the-Five-Lessons.svg)
+
+Used in [01-about-the-project/README.md](../../01-about-the-project/README.md).
+
+## From completing a task to reflecting on it
+
+Reflection begins with examining what happened during the lesson. **(A)** A worked example from *Learning Remote Computing in a Virtual Laundromat* shows how a learner checks a simulated job’s log and output files. **(B)** Five shared prompts invite students to describe what they learned, where they encountered difficulty, which tools mattered, and how they might approach similar work in MRI research.
+
+[PNG](Figure-3a-Finish-the-Task-and-Answer-the-Prompts.png) · [PDF](Figure-3a-Finish-the-Task-and-Answer-the-Prompts.pdf) · [SVG](Figure-3a-Finish-the-Task-and-Answer-the-Prompts.svg)
+
+Used in [03-student-reflections/README.md](../../03-student-reflections/README.md).
+
+## Learning from other students’ reflections
+
+Each lesson has its own reflection-video gallery, where students describe their experiences in their own words. This example features Aaryan Sajwani’s reflection on *Learning Remote Computing in a Virtual Laundromat*. Videos are featured with the contributor’s permission and chosen credit, alongside a description and, when available, a transcript.
+
+[PNG](Figure-3b-Share-in-the-Lesson-Gallery.png) · [PDF](Figure-3b-Share-in-the-Lesson-Gallery.pdf) · [SVG](Figure-3b-Share-in-the-Lesson-Gallery.svg)
+
+Used in [03-student-reflections/README.md](../../03-student-reflections/README.md).
+
+## Working through a missing-file error
+
+Aaryan Sajwani demonstrates how to investigate a missing-file message by checking the current folder, listing the available files, and comparing the typed path with the actual filename. The example separates two problems: running the command from the wrong folder and entering a filename with different capitalization and a missing underscore. The corrected command displays the requested instructions.
+
+[PNG](Figure-S1-Worked-Troubleshooting-Example.png) · [PDF](Figure-S1-Worked-Troubleshooting-Example.pdf) · [SVG](Figure-S1-Worked-Troubleshooting-Example.svg)
+
+Used in [02-learning-the-games/watch-G8-Work-Through-an-Error-and-Ask-for-Help.md](../../02-learning-the-games/watch-G8-Work-Through-an-Error-and-Ask-for-Help.md).
+
+## Save your changes and check the file
+
+Follow Carlo Bayona as he edits a text file in nano, saves it, and reads it back with `cat`. Checking the saved contents lets you confirm that your changes reached the file. Cropped video frames show the editing steps; the final Terminal view is redrawn for readability.
+
+[GIF](Getting-Started-Edit-Save-and-Check.gif) · [Still image](Getting-Started-Edit-Save-and-Check-static.png) · [MP4](Getting-Started-Edit-Save-and-Check.mp4)
+
+Used in [02-learning-the-games/watch-G5-Read-Edit-and-Save-a-Text-File.md](../../02-learning-the-games/watch-G5-Read-Edit-and-Save-a-Text-File.md).
+
+## Check that the basket matches the order
+
+After running the Wine Shed sorting script, Carlo Bayona checks the customer’s basket and opens a selected wine file. Comparing its color and flavor with the order shows why checking a result involves more than counting files. The animation redraws the commands and output from his walkthrough for readability.
+
+[GIF](Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order.gif) · [Still image](Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order-static.png) · [MP4](Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Check-the-Order.mp4)
+
+Used in [02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Supplemental-Walkthrough.md](../../02-learning-the-games/02-learning-bash-scripting-by-sorting-a-wine-shed/watch-Learning-Bash-Scripting-by-Sorting-a-Wine-Shed-Supplemental-Walkthrough.md).

@@ -8,6 +8,14 @@ Create your first text file alongside Carlo as he introduces nano, a text editor
 
 https://github.com/user-attachments/assets/495bff79-6726-4c10-9849-e2f3e9e72a0a
 
+### Save your changes and check the file
+
+![A text file is edited in nano, saved, and read back using cat.](../assets/figures/Getting-Started-Edit-Save-and-Check.gif)
+
+Follow Carlo Bayona as he edits a text file in nano, saves it, and reads it back with `cat`. Checking the saved contents lets you confirm that your changes reached the file. Cropped video frames show the editing steps; the final Terminal view is redrawn for readability.
+
+[View still image](../assets/figures/Getting-Started-Edit-Save-and-Check-static.png) · [Open MP4](../assets/figures/Getting-Started-Edit-Save-and-Check.mp4)
+
 ## Using this example
 
 To leave nano, press `Ctrl+X`. If it asks whether to save your changes, press `Y`, then `Enter` to accept the filename. You can open nano’s help with `Ctrl+G`.
