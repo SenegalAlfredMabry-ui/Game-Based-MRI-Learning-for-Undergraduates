@@ -1,5 +1,7 @@
 # Getting started
 
+The [Getting Started videos](getting-started-videos.md) accompany this guide. Undergraduate contributors Katie Wu, John Heatwole, Carlo Bayona, and Aaryan Sajwani show you how to prepare a lesson and use Terminal. Follow along as you get your files ready, and return to their examples whenever you need a reminder.
+
 ## What you will need
 
 You will need a computer with a folder where you can save and change files, a Terminal that can run Bash, a text editor, and enough storage for the extracted lessons and their outputs. Lessons 1, 2, and 4 introduce computing through ordinary files. Lessons 3 and 5 also require neuroimaging tools. The learning index lists the full lesson titles and the software guide explains the tools used in each.

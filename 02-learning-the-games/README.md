@@ -1,5 +1,7 @@
 # Learning index
 
+Begin with the [Getting Started guide](getting-started.md) and [eight student-led tutorials](getting-started-videos.md) to prepare your files and practice using Terminal.
+
 ## Follow the five lessons
 
 Work through Lessons 1–5 in order. Each lesson builds on earlier skills. You can return to the software guide, command reference, or troubleshooting pages at any point.
@@ -22,4 +24,4 @@ The lesson sequence connects introductory Unix and Bash tasks with scan conversi
 
 ![A timeline groups 16 instructional recordings by lesson and separates the two student reflections from the instructional total.](../assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Instructional-Video-Series.png)
 
-Sixteen instructional recordings provide setup demonstrations, walkthroughs, and answers to common questions across the five lessons. Lindsey’s and Tiffany’s reflections are separate recordings, available in their respective lesson galleries. Durations are rounded.
+The figure shows the original 16 lesson recordings and the first two reflections. The collection now also includes eight Getting Started tutorials, Carlo’s Wine Shed supplemental walkthrough, and reflections from John and Carlo (Lesson 2) and Aaryan (Lesson 4). Open each lesson’s video page and reflection gallery for its complete collection. Durations are rounded.

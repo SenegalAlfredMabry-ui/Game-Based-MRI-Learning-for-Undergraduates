@@ -34,7 +34,7 @@ Recording a reflection gives students practice explaining what they did, what ch
 
 This repository accompanies Game-Based Learning for Hands-On Magnetic Resonance Imaging Education in Undergraduates.
 
-The instructional recordings feature Chloe King, Lindsey Ko, Osiel Iglesias, and Tiffany Huang. Chloe King teaches Lessons 1 and 2; Lindsey Ko teaches Lesson 3; Osiel Iglesias teaches Lesson 4; Tiffany Huang teaches Lesson 5. Senegal Alfred Mabry maintains the curriculum and repository. The manuscript’s complete bibliographic details will be added when available.
+The instructional recordings feature Chloe King, Lindsey Ko, Osiel Iglesias, and Tiffany Huang. Chloe King teaches Lessons 1 and 2; Lindsey Ko teaches Lesson 3; Osiel Iglesias teaches Lesson 4; Tiffany Huang teaches Lesson 5. In Getting Started, Katie Wu, John Heatwole, Carlo Bayona, and Aaryan Sajwani help you prepare for the lessons through eight short demonstrations. Carlo also walks you through the Wine Shed scripting activity. In the reflection videos, John and Carlo discuss their experience with the Wine Shed, and Aaryan shares what he learned from the Virtual Laundromat. Senegal Alfred Mabry maintains the curriculum and repository. The manuscript’s complete bibliographic details will be added when available.
 
 
 

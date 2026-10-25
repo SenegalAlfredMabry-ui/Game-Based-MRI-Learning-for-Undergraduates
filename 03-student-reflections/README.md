@@ -2,7 +2,7 @@
 
 ## Learning through reflection
 
-Reflection gives you an opportunity to explain what you learned and how you worked through uncertainty. Describing an error, the checks you made, and the reason for your next step builds habits you will use as a scientist: communicating methods, evaluating results, and deciding what to investigate next.
+As you work through a lesson, you may find that some steps make sense right away and others take a few attempts. In these reflection videos, undergraduate contributors share their own experiences with the games, including what confused them and what helped them move forward. You can find each video in the reflection gallery for its lesson. After watching, consider how their experience compares with yours and what you would try differently next time.
 
 Each lesson has its own reflection-video gallery. After completing the activity, use the five shared questions below to prepare a video about your experience. You can record your screen, narrate slides, or speak to the camera. Showing your face is optional.
 

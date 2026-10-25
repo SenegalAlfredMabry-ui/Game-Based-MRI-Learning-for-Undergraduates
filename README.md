@@ -12,13 +12,15 @@ Together, these games offer an introduction to the computational side of neuroim
 
 ![Five lesson cards show the activities, undergraduate instructors, and instructional-video totals.](assets/figures/Game-Based-MRI-Learning-for-Undergraduates-Overview.png)
 
-The five lessons introduce file navigation, scripting, MRI conversion, simulated remote computing, and brain image analysis. The overview lists 16 instructional recordings; student reflections appear separately in the lesson galleries.
+The five lessons introduce file navigation, scripting, MRI conversion, simulated remote computing, and brain image analysis. Use the lesson pages for the full video collection, including supplemental walkthroughs and student reflections.
 
 ## Start learning
 
 [Getting started](02-learning-the-games/getting-started.md) · [About](01-about-the-project/README.md) · [For instructors](04-for-instructors/README.md) · [Resources](05-resources/README.md) · [Licensing](LICENSES/README.md)
 
-Begin with Getting Started to prepare your computer, download a lesson, and open Terminal. Then follow the five lessons in order. Each lesson includes a practical task, written instructions, ways to check your work, instructional videos, and questions to guide your reflection video.
+Before you begin the five lessons, Getting Started introduces the computer skills you will use along the way. You may already know how to find a folder or open a file by clicking on your computer. Here, you will practice doing these tasks in Terminal, a program that lets you interact with your computer by typing commands. Because Terminal may be unfamiliar, we created eight short videos to accompany the written instructions. Made by fellow students, these demonstrations help you get your lesson files ready. Begin with these examples, then use what you learn as you work through the games and start exploring MRI data.
+
+[Watch the Getting Started tutorials](02-learning-the-games/getting-started-videos.md).
 
 The lessons and recordings are publicly available. Downloading the lessons does not require a GitHub account; submitting feedback through GitHub does. Feedback and the submitting GitHub username are public.
 

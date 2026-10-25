@@ -1,5 +1,9 @@
 # Changelog
 
+## Video update — 2026-10-24
+
+Added eight Getting Started tutorials by Katie Wu, John Heatwole, Carlo Bayona, and Aaryan Sajwani; Carlo’s Wine Shed supplemental walkthrough; and reflection videos for the Wine Shed and Virtual Laundromat. Each new recording includes a watch page, transcript draft, and thumbnail. Revised the accompanying text and added practical notes for differences in commands and platforms. The collection now contains 29 videos: eight Getting Started tutorials, 17 lesson instructional recordings, and four reflections.
+
 ## Documentation update — 2026-10-16
 
 Added a reflection guide, a software-by-lesson matrix, a scan-to-mask measurement guide, and reflection-gallery headers for all five lessons. Updated Lindsey Ko’s and Tiffany Huang’s reflection thumbnails. Added printable figures, text descriptions, and a contributor thumbnail template.

@@ -17,4 +17,6 @@ Lesson 5: ambiguous masks flagged; missing masks are not measured as zero
 
 Validated on macOS with Bash and Python. GUI conversion and image annotation have not been tested end to end for this release. Linux and Windows/WSL are setup options, not yet validated platforms.
 
-Video transcripts are drafts pending a complete audio check. Lindsey Ko’s reflection is available in Lesson 3 and Tiffany Huang’s in Lesson 5. Lessons 1, 2, and 4 await reflection recordings.
+Video transcripts are drafts pending a complete audio check. Reflection recordings are available for Lessons 2–5: John Heatwole and Carlo Bayona (Lesson 2), Lindsey Ko (Lesson 3), Aaryan Sajwani (Lesson 4), and Tiffany Huang (Lesson 5). Lesson 1 awaits an audible reflection recording.
+
+The October 24 video update adds eight Getting Started tutorials, a Wine Shed supplemental walkthrough, and two reflections, with transcripts and playback pages. G7 omits the unrelated aside; G8 includes a filename clarification. Transcript drafts retain marked uncertainties where speech could not be resolved confidently.

@@ -157,7 +157,7 @@ Used in [02-learning-the-games/04-learning-remote-computing-in-a-virtual-laundro
 
 ## Game-Based-MRI-Learning-for-Undergraduates-Overview.png
 
-The five lessons introduce file navigation, scripting, MRI conversion, simulated remote computing, and brain image analysis. The overview lists 16 instructional recordings; student reflections appear separately in the lesson galleries.
+The five lessons introduce file navigation, scripting, MRI conversion, simulated remote computing, and brain image analysis. The overview lists the original 16 lesson recordings. Getting Started tutorials, supplemental walkthroughs, and student reflections are available through the lesson pages.
 
 [Open image](Game-Based-MRI-Learning-for-Undergraduates-Overview.png) · [PDF](Game-Based-MRI-Learning-for-Undergraduates-Overview.pdf)
 
