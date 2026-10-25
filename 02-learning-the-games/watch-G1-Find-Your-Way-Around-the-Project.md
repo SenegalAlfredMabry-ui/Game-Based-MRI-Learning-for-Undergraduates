@@ -6,6 +6,6 @@ Katie welcomes you to the project with a tour of the materials for each lesson. 
 
 [Download the full-quality video](../assets/videos/G1-Find-Your-Way-Around-the-Project.mp4) · [Transcript draft](../assets/transcripts/G1-Find-Your-Way-Around-the-Project.md)
 
-https://github.com/user-attachments/assets/897a4f22-fc64-4c88-8c31-b21f275545b7
+https://github.com/user-attachments/assets/51553021-16b8-4885-b84f-9b84f2c0fa48
 
 [Getting Started videos](getting-started-videos.md) · [Written guide](getting-started.md)
